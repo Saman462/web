@@ -7,6 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import { makeStyles } from '@material-ui/core';
 import Logo from '../../strada-web/public/assets/Asset 1.png'
+
 const useStyles = makeStyles({
   logo: {
     backgroundRepeat: "no-repeat",
