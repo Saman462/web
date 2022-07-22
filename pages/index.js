@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     width: "43px",
-    height: "38px",
+    height: "34px",
     color: "white",
     marginLeft: "5px",
   },
