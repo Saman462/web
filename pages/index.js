@@ -9,14 +9,23 @@ import { makeStyles } from '@material-ui/core';
 import Logo from '../../strada-web/public/assets/Asset 1.png'
 
 const useStyles = makeStyles({
-  logo: {
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    width: "43px",
-    height: "34px",
-    color: "white",
-    marginLeft: "5px",
+  // logo: {
+  //   backgroundRepeat: "no-repeat",
+  //   backgroundSize: "cover",
+  //   width: "43px",
+  //   height: "34px",
+  //   color: "white",
+  //   marginLeft: "5px",
+  // },
+
+  logoContainer: {
+    width: 230,
+    margin: 'auto'
   },
+  logoMedia: {
+    height: '100%',
+    width: '100%'
+  }
 })
 
 const styles = {
@@ -63,7 +72,12 @@ export default function Home() {
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, cursor: 'pointer', color: 'white', textDecoration: 'none' }}
             >
-              <Image src={Logo} className={classes.logo} style={{ cursor: 'pointer' }} />
+
+
+              <Container className={classes.logoContainer}>
+              <Image src={Logo} className={classes.logoMedia} style={{ cursor: 'pointer' }} />
+              </Container>
+              
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
