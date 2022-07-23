@@ -20,7 +20,7 @@
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-spring": "^9.5.0"
+    "react-spring": "^9.5.1"
   },
   "devDependencies": {
     "eslint": "8.20.0",
