@@ -181,14 +181,23 @@ export default function Home() {
         <Parallax pages={4}>
           <ParallaxLayer offset={0} speed={0} sticky={{ start: 0, end: 3 }}>
             <div>
-              <Image
-                src={sky}
-                alt="sky"
-                width="1100px"
-                height="1100px"
-                zIndex="1000"
-                position="relative"
-              />
+              <div style={{ zIndex: "1200" }}>
+                <Image
+                  src={sky}
+                  alt="sky"
+                  width="1100px"
+                  height="1100px"
+                  position="absolute"
+                />
+              </div>
+              <div style={{ zIndex: "1300", top: 60, position: "absolute" }}>
+                <Image
+                  src={clouds}
+                  alt="clouds"
+                  width="1200px"
+                  height="200px"
+                />
+              </div>
             </div>
             <div style={{ position: "absolute", top: "550px", zIndex: "1300" }}>
               <Image src={ground} alt="ground" width="1100px" height="481px" />
@@ -197,7 +206,7 @@ export default function Home() {
                   position: "absolute",
                   top: "0px",
                   left: 0,
-                  zIndex: "1310",
+                  zIndex: 13100,
                 }}
               >
                 <Image src={road} alt="road" width="6990px" height="3050px" />
@@ -207,7 +216,7 @@ export default function Home() {
                   position: "absolute",
                   top: "0px",
                   left: 50,
-                  zIndex: "1320",
+                  zIndex: 132000,
                 }}
               >
                 <Image src={sign} alt="sign" width="240px" height="210px" />
@@ -215,7 +224,7 @@ export default function Home() {
             </div>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={0} sticky={{ start: 3, end: 3 }}>
-            <div style={{ position: "absolute", top: "280px" }}>
+            <div style={{ position: "absolute", top: "280px", zIndex: 1000 }}>
               <Image
                 src={last}
                 alt="last mountain"
@@ -229,7 +238,7 @@ export default function Home() {
             speed={0.05}
             sticky={{ start: 2, end: 3 }}
           >
-            <div style={{ position: "absolute", top: "200px" }}>
+            <div style={{ position: "absolute", top: "200px", zIndex: 1000 }}>
               <Image
                 src={middle}
                 alt="middle mountain"
@@ -239,7 +248,7 @@ export default function Home() {
             </div>
           </ParallaxLayer>
           <ParallaxLayer offset={1} speed={0.05} sticky={{ start: 1, end: 3 }}>
-            <div style={{ position: "absolute", top: "100px" }}>
+            <div style={{ position: "absolute", top: "100px", zIndex: 1000 }}>
               <Image
                 src={first}
                 alt="first mountain"
