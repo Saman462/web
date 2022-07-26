@@ -177,33 +177,76 @@ export default function Home() {
         </Container>
       </AppBar>
       {/* parallax effect */}
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          backgroundImage: { sky },
-        }}
-      >
-        <Image src={road} id="road" />
-        <Image src={ground} id="ground" />
-        {/* <image src={sky} style={{ width: "200px", height: "200px" }} /> */}
-        <Parallax pages={3}>
-          <ParallaxLayer
-            offset={3}
-            speed={0.05}
-            sticky={{ start: 2.8, end: 3 }}
-          >
-            <Image src={last} id="last" />
+      <div>
+        <Parallax pages={4}>
+          <ParallaxLayer offset={0} speed={0} sticky={{ start: 0, end: 3 }}>
+            <div>
+              <Image
+                src={sky}
+                alt="sky"
+                width="1100px"
+                height="1100px"
+                zIndex="1000"
+                position="relative"
+              />
+            </div>
+            <div style={{ position: "absolute", top: "550px", zIndex: "1300" }}>
+              <Image src={ground} alt="ground" width="1100px" height="481px" />
+              <div
+                style={{
+                  position: "absolute",
+                  top: "0px",
+                  left: 0,
+                  zIndex: "1310",
+                }}
+              >
+                <Image src={road} alt="road" width="6990px" height="3050px" />
+              </div>
+              <div
+                style={{
+                  position: "absolute",
+                  top: "0px",
+                  left: 50,
+                  zIndex: "1320",
+                }}
+              >
+                <Image src={sign} alt="sign" width="240px" height="210px" />
+              </div>
+            </div>
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={0.05} sticky={{ start: 2, end: 3 }}>
-            <Image src={middle} id="middle" />
+          <ParallaxLayer offset={2.5} speed={0} sticky={{ start: 3, end: 3 }}>
+            <div style={{ position: "absolute", top: "280px" }}>
+              <Image
+                src={last}
+                alt="last mountain"
+                width="1100px"
+                height="180px"
+              />
+            </div>
           </ParallaxLayer>
           <ParallaxLayer
-            offset={1}
+            offset={1.5}
             speed={0.05}
-            sticky={{ start: 1.5, end: 3 }}
+            sticky={{ start: 2, end: 3 }}
           >
-            <Image src={first} id="first" />
+            <div style={{ position: "absolute", top: "200px" }}>
+              <Image
+                src={middle}
+                alt="middle mountain"
+                width="1100px"
+                height="450px"
+              />
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer offset={1} speed={0.05} sticky={{ start: 1, end: 3 }}>
+            <div style={{ position: "absolute", top: "100px" }}>
+              <Image
+                src={first}
+                alt="first mountain"
+                width="1100px"
+                height="450px"
+              />
+            </div>
           </ParallaxLayer>
         </Parallax>
       </div>
