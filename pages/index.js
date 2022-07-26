@@ -18,6 +18,7 @@ import last from "../public/assets/LM.png";
 import sign from "../public/assets/roadsign.png";
 import ground from "../public/assets/Ground.png";
 import clouds from "../public/assets/Clouds.png";
+import style from "../styles/Home.module.css";
 
 const useStyles = makeStyles({
   // logo: {
@@ -177,60 +178,29 @@ export default function Home() {
         </Container>
       </AppBar>
       {/* parallax effect */}
+
       <div>
-        <Parallax pages={4}>
-          <ParallaxLayer offset={0} speed={0} sticky={{ start: 0, end: 3 }}>
-            <div>
-              <div style={{ zIndex: "1200" }}>
-                <Image
-                  src={sky}
-                  alt="sky"
-                  width="1100px"
-                  height="1100px"
-                  position="absolute"
-                />
-              </div>
-              <div style={{ zIndex: "1300", top: 60, position: "absolute" }}>
-                <Image
-                  src={clouds}
-                  alt="clouds"
-                  width="1200px"
-                  height="200px"
-                />
-              </div>
-            </div>
-            <div style={{ position: "absolute", top: "550px", zIndex: "1300" }}>
-              <Image src={ground} alt="ground" width="1100px" height="481px" />
-              <div
-                style={{
-                  position: "absolute",
-                  top: "0px",
-                  left: 0,
-                  zIndex: 13100,
-                }}
-              >
-                <Image src={road} alt="road" width="6990px" height="3050px" />
-              </div>
-              <div
-                style={{
-                  position: "absolute",
-                  top: "0px",
-                  left: 50,
-                  zIndex: 132000,
-                }}
-              >
-                <Image src={sign} alt="sign" width="240px" height="210px" />
-              </div>
-            </div>
-          </ParallaxLayer>
+        <div>
+          <div className={style.sky}>
+            <Image src={sky} alt="sky" />
+          </div>
+          <div className={style.clouds}>
+            <Image src={clouds} alt="clouds" />
+          </div>
+        </div>
+        <div className={style.ground}>
+          <Image src={ground} alt="ground" />
+        </div>
+        <div className={style.road}>
+          <Image src={road} alt="road" />
+        </div>
+        <div className={style.sign}>
+          <Image src={sign} alt="sign" />
+        </div>
+        <Parallax pages={4} className={style.Parrallax}>
           <ParallaxLayer offset={2.5} speed={0} sticky={{ start: 3, end: 3 }}>
-            <div style={{ position: "absolute", top: "280px", zIndex: 1000 }}>
-              <Image
-                src={last}
-                alt="last mountain"
-                width="1100px"
-                height="180px"
-              />
+            <div className={style.last}>
+              <Image src={last} alt="last mountain" />
             </div>
           </ParallaxLayer>
           <ParallaxLayer
@@ -238,23 +208,13 @@ export default function Home() {
             speed={0.05}
             sticky={{ start: 2, end: 3 }}
           >
-            <div style={{ position: "absolute", top: "200px", zIndex: 1000 }}>
-              <Image
-                src={middle}
-                alt="middle mountain"
-                width="1100px"
-                height="450px"
-              />
+            <div className={style.middle}>
+              <Image src={middle} alt="middle mountain" />
             </div>
           </ParallaxLayer>
           <ParallaxLayer offset={1} speed={0.05} sticky={{ start: 1, end: 3 }}>
-            <div style={{ position: "absolute", top: "100px", zIndex: 1000 }}>
-              <Image
-                src={first}
-                alt="first mountain"
-                width="1100px"
-                height="450px"
-              />
+            <div className={style.first}>
+              <Image src={first} alt="first mountain" />
             </div>
           </ParallaxLayer>
         </Parallax>
