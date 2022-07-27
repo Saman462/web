@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Box, Paper, Button, IconButton, Typography } from "@mui/material";
+import { Box, Paper, Button, IconButton, Typography, Stack } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -19,6 +19,7 @@ import sign from "../public/assets/roadsign.png";
 import ground from "../public/assets/Ground.png";
 import clouds from "../public/assets/Clouds.png";
 import style from "../styles/Home.module.css";
+import banner1 from '../public/assets/Asset 6_1.png'
 
 const useStyles = makeStyles({
   // logo: {
@@ -38,6 +39,10 @@ const useStyles = makeStyles({
     height: "100%",
     width: "100%",
   },
+  bannerContainer:{
+    width: 250,
+    margin: 'auto'
+  }
 });
 
 const styles = {
@@ -219,6 +224,26 @@ export default function Home() {
           </ParallaxLayer>
         </Parallax>
       </div>
+
+              {/* banner portion */}
+
+      <Stack direction="row" spacing={2}>
+
+        <Container className={classes.bannerContainer}>
+          <Image
+            src={banner1}
+          />
+        </Container>
+
+        <Box
+          sx={{
+            width: '200px',
+            height: '200px',
+            backgroundColor: 'blue',
+          }}
+        />
+      </Stack>
+
     </>
   );
 }
