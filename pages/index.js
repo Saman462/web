@@ -1,6 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Box, Paper, Button, IconButton, Typography, Stack } from "@mui/material";
+
+import {
+  Box,
+  Paper,
+  Button,
+  Card,
+  Link,
+  CardContent,
+  IconButton,
+  Typography,
+  Stack,
+} from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -16,10 +27,10 @@ import first from "../public/assets/fm.png";
 import middle from "../public/assets/MM.png";
 import last from "../public/assets/LM.png";
 import sign from "../public/assets/roadsign.png";
-import ground from "../public/assets/Ground.png";
 import clouds from "../public/assets/Clouds.png";
 import style from "../styles/Home.module.css";
-import banner1 from '../public/assets/Asset 6_1.png'
+import banner1 from "../public/assets/Asset6_1.png";
+import { margin } from "@mui/system";
 
 const useStyles = makeStyles({
   // logo: {
@@ -39,10 +50,10 @@ const useStyles = makeStyles({
     height: "100%",
     width: "100%",
   },
-  bannerContainer:{
-    width: 250,
-    margin: 'auto'
-  }
+  bannerContainer: {
+    width: 850,
+    margin: "auto",
+  },
 });
 
 const styles = {
@@ -193,9 +204,6 @@ export default function Home() {
             <Image src={clouds} alt="clouds" />
           </div>
         </div>
-        <div className={style.ground}>
-          <Image src={ground} alt="ground" />
-        </div>
         <div className={style.road}>
           <Image src={road} alt="road" />
         </div>
@@ -225,25 +233,48 @@ export default function Home() {
         </Parallax>
       </div>
 
-              {/* banner portion */}
+      {/* banner portion */}
 
       <Stack direction="row" spacing={2}>
-
         <Container className={classes.bannerContainer}>
-          <Image
-            src={banner1}
-          />
+          <Image src={banner1} />
         </Container>
 
-        <Box
-          sx={{
-            width: '200px',
-            height: '200px',
-            backgroundColor: 'blue',
-          }}
-        />
+        <Box sx={{ width: "900px" }}>
+          <Card>
+            <CardContent>
+              <Typography gutterBottom variant="h4" component="div">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                vulputate
+              </Typography>
+              <Typography variant="body1" color="text.secondary">
+                Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+                laoreet orci nulla, in dictum ligula laoreet nec. Aliquam
+                fermentum quam vel nulla tincidunt, vel luctus tellus
+                vestibulum.
+              </Typography>
+              <Typography variant="body1" color="text.secondary">
+                Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+                laoreet orci nulla, in dictum ligula laoreet nec. Aliquam
+                fermentum quam vel nulla tincidunt, vel luctus tellus
+                vestibulum.
+              </Typography>
+              <Typography variant="body1" color="text.secondary">
+                Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+                laoreet orci nulla, in dictum ligula laoreet nec. Aliquam
+                fermentum quam vel nulla tincidunt, vel luctus tellus
+                vestibulum.
+              </Typography>
+              <Typography>
+                Lorem ispum luctus tellu vestibulum.
+                <Link href="#" color="#d32f2f">
+                  Lorem ipsum vel nulla
+                </Link>
+              </Typography>
+            </CardContent>
+          </Card>
+        </Box>
       </Stack>
-
     </>
   );
 }
