@@ -51,7 +51,7 @@ const useStyles = makeStyles({
     width: "100%",
   },
   bannerContainer: {
-    width: 850,
+    width: 450,
     margin: "auto",
   },
 });
@@ -240,8 +240,7 @@ export default function Home() {
           <Image src={banner1} />
         </Container>
 
-        <Box sx={{ width: "900px" }}>
-          <Card>
+          <Card sx={{ width: "500px", height: '500px'}} >
             <CardContent>
               <Typography gutterBottom variant="h4" component="div">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -273,7 +272,6 @@ export default function Home() {
               </Typography>
             </CardContent>
           </Card>
-        </Box>
       </Stack>
     </>
   );
