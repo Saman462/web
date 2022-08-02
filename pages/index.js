@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-
+import deeproad from "../public/assets/deeproad.png";
+import assettag from "../public/assets/assettag.png";
 import {
   Box,
   Paper,
@@ -51,8 +52,37 @@ const useStyles = makeStyles({
     width: "100%",
   },
   bannerContainer: {
-    width: 450,
+    width: 1150,
+    margin: "80px",
+    position: "relative",
+    bottom: "160px",
+  },
+  bannerContainer1: {
+    width: 1150,
+    height: 900,
     margin: "auto",
+    position: "relative",
+    left: "120px",
+    bottom: " 80px",
+  },
+  card1: {
+    marginLeft: "80px",
+    position: "absolute",
+    left: "1500px",
+    top: "1300px",
+  },
+  card2: {
+    margin: "auto",
+    marginLeft: "250px",
+    position: "relative",
+    bottom: "200px",
+    left: "20px",
+  },
+  card3: {
+    margin: "auto",
+    position: "relative",
+    bottom: "100px",
+    left: "150px",
   },
 });
 
@@ -195,7 +225,7 @@ export default function Home() {
       </AppBar>
       {/* parallax effect */}
 
-      <div>
+      <div className={style.container}>
         <div>
           <div className={style.sky}>
             <Image src={sky} alt="sky" />
@@ -240,38 +270,188 @@ export default function Home() {
           <Image src={banner1} />
         </Container>
 
-          <Card sx={{ width: "500px", height: '500px'}} >
-            <CardContent>
-              <Typography gutterBottom variant="h4" component="div">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                vulputate
-              </Typography>
-              <Typography variant="body1" color="text.secondary">
-                Mauris eget varius sapien. Sed facilisis congue porta. Nulla
-                laoreet orci nulla, in dictum ligula laoreet nec. Aliquam
-                fermentum quam vel nulla tincidunt, vel luctus tellus
-                vestibulum.
-              </Typography>
-              <Typography variant="body1" color="text.secondary">
-                Mauris eget varius sapien. Sed facilisis congue porta. Nulla
-                laoreet orci nulla, in dictum ligula laoreet nec. Aliquam
-                fermentum quam vel nulla tincidunt, vel luctus tellus
-                vestibulum.
-              </Typography>
-              <Typography variant="body1" color="text.secondary">
-                Mauris eget varius sapien. Sed facilisis congue porta. Nulla
-                laoreet orci nulla, in dictum ligula laoreet nec. Aliquam
-                fermentum quam vel nulla tincidunt, vel luctus tellus
-                vestibulum.
-              </Typography>
-              <Typography>
-                Lorem ispum luctus tellu vestibulum.
-                <Link href="#" color="#d32f2f">
-                  Lorem ipsum vel nulla
-                </Link>
-              </Typography>
-            </CardContent>
-          </Card>
+        <Card
+          className={classes.card1}
+          sx={{ width: "800px", height: "800px" }}
+        >
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h3"
+              component="div"
+              fontWeight="800"
+              fontFamily="Open Sans "
+              fontSize="|xx-large"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              vulputate
+            </Typography>
+            <br />
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+            >
+              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+              laoreet orci nulla, in dictum ligula laoreet nec.
+            </Typography>
+            <br />
+            <br />
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+            >
+              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+              laoreet orci nulla, in dictum ligula laoreet nec.
+            </Typography>
+            <br></br>
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+            >
+              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+              laoreet orci nulla, in dictum ligula laoreet nec.
+            </Typography>
+            <br />
+            <br />
+            <Typography color="text.primary" fontWeight="500" fontSize="30px">
+              Lorem ispum vestibulum.
+              <Link href="#" fontWeight="600" fontSize="30px" color="#d32f2f">
+                Lorem ipsum vel nulla
+              </Link>
+            </Typography>
+          </CardContent>
+        </Card>
+      </Stack>
+      <Stack direction="row" spacing={2}>
+        <Card
+          className={classes.card2}
+          sx={{ width: "800px", height: "700px" }}
+        >
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h3"
+              component="div"
+              fontWeight="800"
+              fontFamily="Open Sans "
+              fontSize="|xx-large"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              vulputate
+            </Typography>
+            <br />
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+            >
+              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+              laoreet orci nulla, in dictum ligula laoreet nec.
+            </Typography>
+            <br />
+            <br />
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+            >
+              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+              laoreet orci nulla, in dictum ligula laoreet nec.
+            </Typography>
+            <br></br>
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+            >
+              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+              laoreet orci nulla, in dictum ligula laoreet nec.
+            </Typography>
+            <br />
+            <br />
+            <Typography color="text.primary" fontWeight="500" fontSize="30px">
+              Lorem ispum vestibulum.
+              <Link href="#" fontWeight="600" fontSize="30px" color="#d32f2f">
+                Lorem ipsum vel nulla
+              </Link>
+            </Typography>
+          </CardContent>
+        </Card>
+        <Container className={classes.bannerContainer1}>
+          <Image src={assettag} />
+        </Container>
+      </Stack>
+      <Stack direction="row" spacing={2}>
+        <Container className={classes.bannerContainer}>
+          <Image src={deeproad} />
+        </Container>
+
+        <Card
+          className={classes.card3}
+          sx={{ width: "800px", height: "700px" }}
+        >
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h3"
+              component="div"
+              fontWeight="800"
+              fontFamily="Open Sans "
+              fontSize="|xx-large"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              vulputate
+            </Typography>
+            <br />
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+            >
+              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+              laoreet orci nulla, in dictum ligula laoreet nec.
+            </Typography>
+            <br />
+            <br />
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+            >
+              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+              laoreet orci nulla, in dictum ligula laoreet nec.
+            </Typography>
+            <br></br>
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+            >
+              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+              laoreet orci nulla, in dictum ligula laoreet nec.
+            </Typography>
+            <br />
+            <br />
+            <Typography color="text.primary" fontWeight="500" fontSize="30px">
+              Lorem ispum vestibulum.
+              <Link href="#" fontWeight="600" fontSize="30px" color="#d32f2f">
+                Lorem ipsum vel nulla
+              </Link>
+            </Typography>
+          </CardContent>
+        </Card>
       </Stack>
     </>
   );
