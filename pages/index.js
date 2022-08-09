@@ -453,6 +453,32 @@ export default function Home() {
           </CardContent>
         </Card>
       </Stack>
+
+{/* logos sections */}
+
+      <Stack direction="row" spacing={2}>
+
+        <Container className={classes.bannerContainer}>
+          <Image src={banner1} />
+        </Container>
+
+        <Container className={classes.bannerContainer1}>
+          <Image src={assettag} />
+        </Container>
+
+        <Container className={classes.bannerContainer}>
+          <Image src={deeproad} />
+        </Container>
+
+        <Typography
+          variant="h3"
+          color="text.primary"
+          fontWeight="500"
+          fontSize="25px"
+        >
+          Lörem ipsum mikrosel nyranade. Trigt nism i säns. Krovevåment sos inte homost. Oheten dekar terant, att lak, sände.
+        </Typography>
+      </Stack>
     </>
   );
 }
