@@ -51,38 +51,59 @@ const useStyles = makeStyles({
     height: "100%",
     width: "100%",
   },
+
   bannerContainer: {
-    width: 1150,
-    margin: "80px",
-    position: "relative",
-    bottom: "160px",
+    margin: "5%",
+    position: "absolute",
+    top: "38%",
   },
   bannerContainer1: {
-    width: 1150,
-    height: 900,
-    margin: "auto",
-    position: "relative",
-    left: "120px",
-    bottom: " 80px",
-  },
-  card1: {
-    marginLeft: "80px",
     position: "absolute",
-    left: "1500px",
-    top: "1300px",
+    border: "black solid 2px",
+    left: "68%",
+    top: "115%",
+  },
+  bannerContainer2: {
+    left: "5%",
+    position: "absolute",
+    top: "172%",
+  },
+
+  card1: {
+    position: "absolute",
+    left: "68%",
+    top: "58%",
   },
   card2: {
-    margin: "auto",
-    marginLeft: "250px",
-    position: "relative",
-    bottom: "200px",
-    left: "20px",
+    left: "5%",
+    position: "absolute",
+    top: "115%",
   },
   card3: {
-    margin: "auto",
-    position: "relative",
-    bottom: "100px",
-    left: "150px",
+    position: "absolute",
+    top: "172%",
+    left: "69%",
+  },
+  sbanner: {
+    position: "absolute",
+    top: "220%",
+    left: "5%",
+    height: "20vh",
+    width: "20vw",
+  },
+  sbanner1: {
+    position: "absolute",
+    top: "220%",
+    left: "26%",
+    height: "20vh",
+    width: "20vw",
+  },
+  sbanner2: {
+    position: "absolute",
+    left: "47%",
+    top: "220%",
+    height: "20vh",
+    width: "20vw",
   },
 });
 
@@ -267,13 +288,19 @@ export default function Home() {
 
       <Stack direction="row" spacing={2}>
         <Container className={classes.bannerContainer}>
-          <Image src={banner1} />
+          <Image objectFit="cover" src={banner1} />
         </Container>
-
-        <Card
-          className={classes.card1}
-          sx={{ width: "800px", height: "800px" }}
-        >
+        <Box
+          sx={{
+            backgroundColor: "red",
+            width: "0.5%",
+            height: "14%",
+            top: "58%",
+            position: "absolute",
+            left: "67.5%",
+          }}
+        ></Box>
+        <Card className={classes.card1} sx={{ width: "30vw", height: "18vw" }}>
           <CardContent>
             <Typography
               gutterBottom
@@ -281,17 +308,17 @@ export default function Home() {
               component="div"
               fontWeight="800"
               fontFamily="Open Sans "
-              fontSize="|xx-large"
+              fontSize="5rem"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              vulputate
+              vulputate adipiscing elit. Quisque vulputate
             </Typography>
             <br />
             <Typography
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="30px"
+              fontSize="3rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -302,7 +329,7 @@ export default function Home() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="30px"
+              fontSize="3rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -312,16 +339,16 @@ export default function Home() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="30px"
+              fontSize="3rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
             </Typography>
             <br />
             <br />
-            <Typography color="text.primary" fontWeight="500" fontSize="30px">
+            <Typography color="text.primary" fontWeight="500" fontSize="3rem">
               Lorem ispum vestibulum.
-              <Link href="#" fontWeight="600" fontSize="30px" color="#d32f2f">
+              <Link href="#" fontWeight="600" fontSize="3rem" color="#d32f2f">
                 Lorem ipsum vel nulla
               </Link>
             </Typography>
@@ -329,10 +356,17 @@ export default function Home() {
         </Card>
       </Stack>
       <Stack direction="row" spacing={2}>
-        <Card
-          className={classes.card2}
-          sx={{ width: "800px", height: "700px" }}
-        >
+        <Box
+          sx={{
+            backgroundColor: "red",
+            width: "0.5%",
+            height: "14%",
+            top: "115%",
+            position: "absolute",
+            left: "4.8%",
+          }}
+        ></Box>
+        <Card className={classes.card2} sx={{ width: "30vw", height: "18vw" }}>
           <CardContent>
             <Typography
               gutterBottom
@@ -340,17 +374,17 @@ export default function Home() {
               component="div"
               fontWeight="800"
               fontFamily="Open Sans "
-              fontSize="|xx-large"
+              fontSize="5rem"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              vulputate
+              vulputateadipiscing elit. Quisque vulputate
             </Typography>
             <br />
             <Typography
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="30px"
+              fontSize="3rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -361,7 +395,7 @@ export default function Home() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="30px"
+              fontSize="3rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -371,34 +405,40 @@ export default function Home() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="30px"
+              fontSize="3rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
             </Typography>
             <br />
             <br />
-            <Typography color="text.primary" fontWeight="500" fontSize="30px">
+            <Typography color="text.primary" fontWeight="500" fontSize="3rem">
               Lorem ispum vestibulum.
-              <Link href="#" fontWeight="600" fontSize="30px" color="#d32f2f">
+              <Link href="#" fontWeight="600" fontSize="3rem" color="#d32f2f">
                 Lorem ipsum vel nulla
               </Link>
             </Typography>
           </CardContent>
         </Card>
         <Container className={classes.bannerContainer1}>
-          <Image src={assettag} />
+          <Image objectFit="cover" src={assettag} />
         </Container>
       </Stack>
       <Stack direction="row" spacing={2}>
-        <Container className={classes.bannerContainer}>
-          <Image src={deeproad} />
+        <Container className={classes.bannerContainer2}>
+          <Image objectFit="cover" src={deeproad} />
         </Container>
-
-        <Card
-          className={classes.card3}
-          sx={{ width: "800px", height: "700px" }}
-        >
+        <Box
+          sx={{
+            backgroundColor: "red",
+            width: "0.5%",
+            height: "14%",
+            top: "172%",
+            position: "absolute",
+            left: "68.42%",
+          }}
+        ></Box>
+        <Card className={classes.card3} sx={{ width: "30vw", height: "18vw" }}>
           <CardContent>
             <Typography
               gutterBottom
@@ -406,7 +446,7 @@ export default function Home() {
               component="div"
               fontWeight="800"
               fontFamily="Open Sans "
-              fontSize="|xx-large"
+              fontSize="5rem"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               vulputate
@@ -416,7 +456,7 @@ export default function Home() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="30px"
+              fontSize="3rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -427,7 +467,7 @@ export default function Home() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="30px"
+              fontSize="3rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -437,16 +477,16 @@ export default function Home() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="30px"
+              fontSize="3rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
             </Typography>
             <br />
             <br />
-            <Typography color="text.primary" fontWeight="500" fontSize="30px">
+            <Typography color="text.primary" fontWeight="500" fontSize="3rem">
               Lorem ispum vestibulum.
-              <Link href="#" fontWeight="600" fontSize="30px" color="#d32f2f">
+              <Link href="#" fontWeight="600" fontSize="3rem" color="#d32f2f">
                 Lorem ipsum vel nulla
               </Link>
             </Typography>
@@ -454,30 +494,38 @@ export default function Home() {
         </Card>
       </Stack>
 
-{/* logos sections */}
+      {/* logos sections */}
 
       <Stack direction="row" spacing={2}>
-
-        <Container className={classes.bannerContainer}>
-          <Image src={banner1} />
+        <Container className={classes.sbanner}>
+          <Image objectFit="cover" src={assettag} />
         </Container>
-
-        <Container className={classes.bannerContainer1}>
-          <Image src={assettag} />
+        <Container className={classes.sbanner1}>
+          <Image objectFit="cover" src={assettag} />
         </Container>
-
-        <Container className={classes.bannerContainer}>
-          <Image src={deeproad} />
+        <Container className={classes.sbanner2}>
+          <Image objectFit="cover" src={assettag} />
         </Container>
-
-        <Typography
-          variant="h3"
-          color="text.primary"
-          fontWeight="500"
-          fontSize="25px"
+        <Box
+          sx={{
+            position: "absolute",
+            left: "69%",
+            Right: "5%",
+            height: "100px",
+            width: "30vw",
+            top: "224%",
+          }}
         >
-          Lörem ipsum mikrosel nyranade. Trigt nism i säns. Krovevåment sos inte homost. Oheten dekar terant, att lak, sände.
-        </Typography>
+          <Typography
+            variant="h3"
+            color="text.primary"
+            fontWeight="650"
+            fontSize="4rem"
+          >
+            Lörem ipsum mikrosel nyranade. Trigt nism i säns. Krovevåment sos
+            inte homost.Krovevåment sos inte homost.
+          </Typography>
+        </Box>
       </Stack>
     </>
   );
