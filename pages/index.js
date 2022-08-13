@@ -53,57 +53,55 @@ const useStyles = makeStyles({
   },
 
   bannerContainer: {
-    margin: "5%",
-    position: "absolute",
-    top: "38%",
+    position: "relative",
+    right: "1000px",
   },
   bannerContainer1: {
-    position: "absolute",
-    border: "black solid 2px",
-    left: "68%",
-    top: "115%",
+    position: "relative",
+    left: "1750px",
+    top: "170px",
   },
   bannerContainer2: {
-    left: "5%",
-    position: "absolute",
-    top: "172%",
+    top: "470px",
+    right: "890px",
+    position: "relative",
   },
 
   card1: {
-    position: "absolute",
-    left: "68%",
-    top: "58%",
+    position: "relative",
+    right: "5%",
+    top: "210px",
   },
   card2: {
-    left: "5%",
-    position: "absolute",
-    top: "115%",
+    left: "4.7%",
+    top: "159px",
+    position: "relative",
   },
   card3: {
-    position: "absolute",
-    top: "172%",
-    left: "69%",
+    position: "relative",
+    right: "5%",
+    top: "369px",
   },
   sbanner: {
-    position: "absolute",
-    top: "220%",
-    left: "5%",
-    height: "20vh",
-    width: "20vw",
+    position: "relative",
+    top: "610px",
+    right: "800px",
+    height: "1000px",
+    width: "1000px",
   },
   sbanner1: {
-    position: "absolute",
-    top: "220%",
-    left: "26%",
-    height: "20vh",
-    width: "20vw",
+    position: "relative",
+    top: "610px",
+    right: "1900px",
+    height: "1000px",
+    width: "1000px",
   },
   sbanner2: {
-    position: "absolute",
-    left: "47%",
-    top: "220%",
-    height: "20vh",
-    width: "20vw",
+    position: "relative",
+    top: "610px",
+    right: "2000px",
+    height: "1000px",
+    width: "1000px",
   },
 });
 
@@ -293,14 +291,17 @@ export default function Home() {
         <Box
           sx={{
             backgroundColor: "red",
-            width: "0.5%",
-            height: "14%",
-            top: "58%",
-            position: "absolute",
-            left: "67.5%",
+            width: "30px",
+            height: "340px",
+            right: "240px",
+            top: "210px",
+            position: "relative",
           }}
         ></Box>
-        <Card className={classes.card1} sx={{ width: "30vw", height: "18vw" }}>
+        <Card
+          className={classes.card1}
+          sx={{ width: "1500px", height: "1000px" }}
+        >
           <CardContent>
             <Typography
               gutterBottom
@@ -359,14 +360,17 @@ export default function Home() {
         <Box
           sx={{
             backgroundColor: "red",
-            width: "0.5%",
-            height: "14%",
-            top: "115%",
-            position: "absolute",
-            left: "4.8%",
+            width: "30px",
+            height: "340px",
+            top: "160px",
+            left: "250px",
+            position: "relative",
           }}
         ></Box>
-        <Card className={classes.card2} sx={{ width: "30vw", height: "18vw" }}>
+        <Card
+          className={classes.card2}
+          sx={{ width: "1500px", height: "1000px" }}
+        >
           <CardContent>
             <Typography
               gutterBottom
@@ -421,7 +425,12 @@ export default function Home() {
           </CardContent>
         </Card>
         <Container className={classes.bannerContainer1}>
-          <Image objectFit="cover" src={assettag} />
+          <Image
+            width=" 6000px"
+            height="5000px"
+            objectFit="fill"
+            src={assettag}
+          />
         </Container>
       </Stack>
       <Stack direction="row" spacing={2}>
@@ -431,14 +440,17 @@ export default function Home() {
         <Box
           sx={{
             backgroundColor: "red",
-            width: "0.5%",
-            height: "14%",
-            top: "172%",
-            position: "absolute",
-            left: "68.42%",
+            width: "30px",
+            height: "340px",
+            top: "370px",
+            right: "240px",
+            position: "relative",
           }}
         ></Box>
-        <Card className={classes.card3} sx={{ width: "30vw", height: "18vw" }}>
+        <Card
+          className={classes.card3}
+          sx={{ width: "1500px", height: "1000px" }}
+        >
           <CardContent>
             <Typography
               gutterBottom
@@ -449,7 +461,7 @@ export default function Home() {
               fontSize="5rem"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              vulputate
+              Lorem ipsum dolor sit amet, consectetur
             </Typography>
             <br />
             <Typography
@@ -509,11 +521,10 @@ export default function Home() {
         <Box
           sx={{
             position: "absolute",
-            left: "69%",
-            Right: "5%",
+            left: "3289px",
             height: "100px",
-            width: "30vw",
-            top: "224%",
+            width: "1500px",
+            top: "5000px",
           }}
         >
           <Typography
