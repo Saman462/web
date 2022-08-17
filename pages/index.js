@@ -3,6 +3,15 @@ import style from "../styles/Home.module.css";
 import Animation from '../components/parallaxAnimation'
 import Banners from '../components/banners'
 import Partners from '../components/partnerLogos'
+// import Testimonials from '../components/clientTestimonials'
+import dynamic from 'next/dynamic'
+
+// reference: https://stackoverflow.com/questions/53139884/next-js-disable-server-side-rendering-on-some-pages
+
+const Testimonials = dynamic(
+  () => import('../components/clientTestimonials'),
+  { ssr: false }
+)
 
 export default function Home() {
   return (
@@ -24,6 +33,11 @@ export default function Home() {
       <div>
         <Partners />
       </div>
+
+      <div>
+        <Testimonials/>
+      </div>
+
     </>
   );
 }
