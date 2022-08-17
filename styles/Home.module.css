@@ -11,6 +11,14 @@
   top: 375px;
   width: 1100px;
 }
+.testimonials {
+  position: relative;
+  top: 300px;
+}
+.image1 {
+  height: 4000px;
+  width: 4000px;
+}
 .last {
   position: absolute;
   top: 500px;
