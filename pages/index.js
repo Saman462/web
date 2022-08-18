@@ -6,7 +6,7 @@ import Line from "../components/lines";
 import Partners from "../components/partnerLogos";
 // import Testimonials from '../components/clientTestimonials'
 import dynamic from "next/dynamic";
-
+import Blogs from '../components/blogs'
 // reference: https://stackoverflow.com/questions/53139884/next-js-disable-server-side-rendering-on-some-pages
 
 const Testimonials = dynamic(() => import("../components/clientTestimonials"), {
@@ -39,6 +39,10 @@ export default function Home() {
       </div>
       <div>
         <Line />
+      </div>
+
+      <div>
+        <Blogs/>
       </div>
     </>
   );
