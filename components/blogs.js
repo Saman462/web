@@ -108,49 +108,38 @@ function blogs() {
             >
               Mauris eget varius sapien. Sed facilisis congue porta.
             </Typography>
-            <div>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-            </div>
+
             <Typography
               variant="body1"
               color="text.primary"
               fontWeight="500"
               fontSize="2.5rem"
+              position="relative"
+              top="6rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet laoreet nec.
             </Typography>
-            <div>
-              <br />
-              <br />
-              <br />
-              <br />
-            </div>
+
             <Typography
               variant="body1"
               color="text.primary"
               fontWeight="500"
               fontSize="2.5rem"
+              position="relative"
+              top="11rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet
             </Typography>
-            <div>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-            </div>
+
             <Typography
               variant="body1"
               color="text.primary"
               fontWeight="500"
               fontSize="2.5rem"
+              position="relative"
+              top="17rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla,
@@ -182,16 +171,13 @@ function blogs() {
               Lorem ipsum dolor sit amet, ipsum dolor sit amet, consectetur
               adipiscing elit.
             </Typography>
-            <div>
-              <br />
-              <br />
-            </div>
+
             <Typography
               color="text.primary"
               position="relative"
-              top="10rem"
               fontWeight="500"
               fontSize="2.5rem"
+              top="15rem"
             >
               Lorem ispum vestibulum.
               <Typography
