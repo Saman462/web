@@ -13,7 +13,7 @@
 }
 .testimonials {
   position: relative;
-  top: 300px;
+  bottom: 35rem;
 }
 .image1 {
   height: 4000px;
@@ -52,4 +52,7 @@
   left: 10px;
   width: 190px;
   z-index: 1009;
+}
+.Blogs {
+  position: relative;
 }

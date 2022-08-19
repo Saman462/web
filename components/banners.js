@@ -10,68 +10,47 @@ import style from "../styles/Home.module.css";
 const useStyles = makeStyles({
   customimg: {
     objectFit: "contain",
-    width: "2000px",
     position: "relative",
     height: "unset",
   },
   bannerContainer: {
     position: "relative",
-    right: "620px",
-    height: "1400px",
-    width: "100%",
+    right: "2rem",
+    height: "80rem",
+    width: "60rem",
+    bottom: "12rem",
   },
   bannerContainer1: {
     position: "relative",
-    left: "1200px",
-    top: "170px",
+    left: "20rem",
+    bottom: "15rem",
   },
   bannerContainer2: {
-    top: "470px",
-    right: "600px",
+    bottom: "8rem",
+    left: "5rem",
     position: "relative",
   },
   card1: {
     position: "relative",
-    right: "400px",
+    right: "8rem",
     margin: "auto",
-    top: "100px",
+    top: "6rem",
     border: "none",
     boxShadow: "none",
   },
   card2: {
-    left: "4.7%",
-    top: "159px",
+    left: "12rem",
+    bottom: "16rem",
     position: "relative",
     border: "none",
     boxShadow: "none",
   },
   card3: {
     position: "relative",
-    right: "7.5%",
-    top: "369px",
+    bottom: "10rem",
+    right: "8rem",
     border: "none",
     boxShadow: "none",
-  },
-  sbanner: {
-    position: "relative",
-    top: "510px",
-    right: "800px",
-    height: "1000px",
-    width: "1000px",
-  },
-  sbanner1: {
-    position: "relative",
-    top: "610px",
-    right: "1900px",
-    height: "1000px",
-    width: "1000px",
-  },
-  sbanner2: {
-    position: "relative",
-    top: "910px",
-    right: "2000px",
-    height: "1000px",
-    width: "1000px",
   },
 });
 function banners() {
@@ -85,16 +64,16 @@ function banners() {
         <Box
           sx={{
             backgroundColor: "#C41E3A",
-            width: "30px",
-            height: "340px",
-            right: "410px",
-            top: "100px",
+            width: "18px",
+            height: "170px",
+            right: "8rem",
+            top: "7.3rem",
             position: "relative",
           }}
         ></Box>
         <Card
           className={classes.card1}
-          sx={{ width: "2000px", height: "1300px" }}
+          sx={{ width: "1000px", height: "800px" }}
         >
           <CardContent>
             <Typography
@@ -103,7 +82,7 @@ function banners() {
               component="div"
               fontWeight="800"
               fontFamily="Open Sans "
-              fontSize="5.5rem"
+              fontSize="3 rem"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               vulputate adipiscing elit. Quisque vulputate
@@ -113,7 +92,7 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="4rem"
+              fontSize="2.5rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -124,7 +103,7 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="4rem"
+              fontSize="2.5rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -134,16 +113,16 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="4rem"
+              fontSize="2.5rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
             </Typography>
             <br />
             <br />
-            <Typography color="text.primary" fontWeight="500" fontSize="4rem">
+            <Typography color="text.primary" fontWeight="500" fontSize="2.5rem">
               Lorem ispum vestibulum.
-              <Link href="#" fontWeight="600" fontSize="4rem" color="#d32f2f">
+              <Link href="#" fontWeight="600" fontSize="2.5rem" color="#d32f2f">
                 Lorem ipsum vel nulla
               </Link>
             </Typography>
@@ -154,16 +133,16 @@ function banners() {
         <Box
           sx={{
             backgroundColor: "#D70040",
-            width: "30px",
-            height: "340px",
-            top: "160px",
-            left: "230px",
+            width: "18px",
+            height: "170px",
+            bottom: "15rem",
+            left: "12rem",
             position: "relative",
           }}
         ></Box>
         <Card
           className={classes.card2}
-          sx={{ width: "2000px", height: "1300px" }}
+          sx={{ width: "1000px", height: "800px" }}
         >
           <CardContent>
             <Typography
@@ -172,7 +151,7 @@ function banners() {
               component="div"
               fontWeight="800"
               fontFamily="Open Sans "
-              fontSize="5.5rem"
+              fontSize="3rem"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               vulputateadipiscing elit. Quisque vulputate
@@ -182,7 +161,7 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="4rem"
+              fontSize="2.5rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -193,7 +172,7 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="4rem"
+              fontSize="2.5rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -203,16 +182,16 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="4rem"
+              fontSize="2.5rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
             </Typography>
             <br />
             <br />
-            <Typography color="text.primary" fontWeight="500" fontSize="4rem">
+            <Typography color="text.primary" fontWeight="500" fontSize="2.5rem">
               Lorem ispum vestibulum.
-              <Link href="#" fontWeight="600" fontSize="4rem" color="#d32f2f">
+              <Link href="#" fontWeight="600" fontSize="2.5rem" color="#d32f2f">
                 Lorem ipsum vel nulla
               </Link>
             </Typography>
@@ -220,8 +199,8 @@ function banners() {
         </Card>
         <Container className={classes.bannerContainer1}>
           <Image
-            width=" 7000px"
-            height="6000px"
+            width=" 900px"
+            height="700px"
             objectFit="fill"
             src={assettag}
           />
@@ -230,8 +209,8 @@ function banners() {
       <Stack direction="row" spacing={2}>
         <Container className={classes.bannerContainer2}>
           <Image
-            height="2000px"
-            width="3000px"
+            width=" 900px"
+            height="700px"
             objectFit="cover"
             src={deeproad}
           />
@@ -239,16 +218,16 @@ function banners() {
         <Box
           sx={{
             backgroundColor: "#C41E3A",
-            width: "30px",
-            height: "340px",
-            top: "370px",
-            right: "390px",
+            width: "18px",
+            height: "170px",
+            right: "7rem",
+            bottom: "8.5rem",
             position: "relative",
           }}
         ></Box>
         <Card
           className={classes.card3}
-          sx={{ width: "2000px", height: "1300px" }}
+          sx={{ width: "1000px", height: "800px" }}
         >
           <CardContent>
             <Typography
@@ -257,7 +236,7 @@ function banners() {
               component="div"
               fontWeight="800"
               fontFamily="Open Sans "
-              fontSize="5.5rem"
+              fontSize="3 rem"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               Lorem ipsum dolor sit amet, consectetur
@@ -267,7 +246,7 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="4rem"
+              fontSize="2.5rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -278,7 +257,7 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="4rem"
+              fontSize="2.5rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -288,16 +267,16 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="4rem"
+              fontSize="2.5rem"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
             </Typography>
             <br />
             <br />
-            <Typography color="text.primary" fontWeight="500" fontSize="4rem">
+            <Typography color="text.primary" fontWeight="500" fontSize="2.5rem">
               Lorem ispum vestibulum.
-              <Link href="#" fontWeight="600" fontSize="4rem" color="#d32f2f">
+              <Link href="#" fontWeight="600" fontSize="2.5rem" color="#d32f2f">
                 Lorem ipsum vel nulla
               </Link>
             </Typography>
