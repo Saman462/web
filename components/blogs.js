@@ -56,7 +56,7 @@ function blogs() {
             bottom: "24rem",
             left: "5rem",
           }}
-        ></Box>
+        />
         <Box
           sx={{
             backgroundColor: "#C41E3A",
@@ -66,7 +66,7 @@ function blogs() {
             bottom: "20rem",
             left: "5rem",
           }}
-        ></Box>
+        />
         <Box
           sx={{
             backgroundColor: "#C41E3A",
@@ -76,7 +76,7 @@ function blogs() {
             bottom: "17rem",
             left: "5rem",
           }}
-        ></Box>
+        />
         <Box
           sx={{
             backgroundColor: "#C41E3A",
@@ -86,7 +86,7 @@ function blogs() {
             bottom: "13rem",
             left: "5rem",
           }}
-        ></Box>
+        />
         <Card
           className={classes.card3}
           sx={{
@@ -180,20 +180,10 @@ function blogs() {
               top="15rem"
             >
               Lorem ispum vestibulum.
-              <Typography
-                color="text.primary"
-                fontWeight="500"
-                fontSize="2.5rem"
-              >
-                <Link
-                  href="#"
-                  fontWeight="600"
-                  fontSize="2.5rem"
-                  color="#d32f2f"
-                >
-                  Lorem ipsum vel
-                </Link>
-              </Typography>
+              <br />
+              <Link href="#" fontWeight="600" fontSize="2.5rem" color="#d32f2f">
+                Lorem ipsum vel
+              </Link>
             </Typography>
           </CardContent>
         </Card>
