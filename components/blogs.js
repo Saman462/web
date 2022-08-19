@@ -108,11 +108,13 @@ function blogs() {
             >
               Mauris eget varius sapien. Sed facilisis congue porta.
             </Typography>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <div>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+            </div>
             <Typography
               variant="body1"
               color="text.primary"
@@ -122,11 +124,12 @@ function blogs() {
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet laoreet nec.
             </Typography>
-            <br />
-            <br />
-            <br />
-            <br />
-
+            <div>
+              <br />
+              <br />
+              <br />
+              <br />
+            </div>
             <Typography
               variant="body1"
               color="text.primary"
@@ -136,10 +139,13 @@ function blogs() {
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet
             </Typography>
-            <br />
-            <br />
-            <br />
-            <br />
+            <div>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+            </div>
             <Typography
               variant="body1"
               color="text.primary"
@@ -176,8 +182,10 @@ function blogs() {
               Lorem ipsum dolor sit amet, ipsum dolor sit amet, consectetur
               adipiscing elit.
             </Typography>
-            <br />
-            <br />
+            <div>
+              <br />
+              <br />
+            </div>
             <Typography
               color="text.primary"
               position="relative"
