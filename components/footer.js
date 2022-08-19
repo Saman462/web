@@ -101,6 +101,7 @@ function footer() {
                     fontWeight="800"
                     fontFamily="Open Sans "
                     fontSize="5.5rem"
+                    style={{ cursor: "pointer" }}
                 >
                     HOME
                 </Typography>
@@ -112,6 +113,7 @@ function footer() {
                     fontWeight="800"
                     fontFamily="Open Sans "
                     fontSize="5.5rem"
+                    style={{ cursor: "pointer" }}
                 >
                     BLOG
                 </Typography>
@@ -123,6 +125,7 @@ function footer() {
                     fontWeight="800"
                     fontFamily="Open Sans "
                     fontSize="5.5rem"
+                    style={{ cursor: "pointer" }}
                 >
                     PRODUCTS
                 </Typography>
@@ -134,6 +137,7 @@ function footer() {
                     fontWeight="800"
                     fontFamily="Open Sans "
                     fontSize="5.5rem"
+                    style={{ cursor: "pointer" }}
                 >
                     ABOUT
                 </Typography>
@@ -145,6 +149,7 @@ function footer() {
                     fontWeight="800"
                     fontFamily="Open Sans "
                     fontSize="5.5rem"
+                    style={{ cursor: "pointer" }}
                 >
                     CONTACT
                 </Typography>
