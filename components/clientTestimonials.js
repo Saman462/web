@@ -13,7 +13,15 @@ import Carousel from "react-spring-3d-carousel-2";
 import Image from "next/image";
 import deeproad from "../public/assets/deeproad.png";
 import assettag from "../public/assets/assettag.png";
-import { Box, Card, Link, CardContent, Typography, Stack,Avatar } from "@mui/material";
+import {
+  Box,
+  Card,
+  Link,
+  CardContent,
+  Typography,
+  Stack,
+  Avatar,
+} from "@mui/material";
 import Container from "@mui/material/Container";
 import { makeStyles } from "@material-ui/core";
 import banner1 from "../public/assets/Asset6_1.png";
@@ -21,49 +29,14 @@ import style from "../styles/Home.module.css";
 // import Logo from "../public/assets/client.jpg"
 
 const useStyles = makeStyles({
-  customimg: {
-    objectFit: "contain",
-    position: "relative",
-    height: "unset",
-  },
-  bannerContainer: {
-    position: "relative",
-    right: "2rem",
-    height: "80rem",
-    width: "60rem",
-    bottom: "12rem",
-  },
-  bannerContainer1: {
-    position: "relative",
-    left: "20rem",
-    bottom: "15rem",
-  },
-  bannerContainer2: {
-    bottom: "8rem",
-    left: "5rem",
-    position: "relative",
-  },
+  circularsquare: { border: "solid #BF0000" },
   card1: {
     position: "relative",
     cursor: "pointer",
-    right: "8rem",
+
     margin: "auto",
-    top: "6rem",
-    borderColor: 'red'
-  },
-  card2: {
-    left: "12rem",
-    bottom: "16rem",
-    position: "relative",
-    border: "none",
-    boxShadow: "none",
-  },
-  card3: {
-    position: "relative",
-    bottom: "10rem",
-    right: "8rem",
-    border: "none",
-    boxShadow: "none",
+
+    border: "solid #BF0000",
   },
 });
 function Testimonials() {
@@ -78,16 +51,18 @@ function Testimonials() {
   const slides = [
     {
       key: 1,
-      content:
+      content: (
         <Card
           className={classes.card1}
-          sx={{ width: "1000px", height: "600px" }}
+          sx={{ width: "1000px", height: "500px" }}
         >
           <CardContent>
             <Avatar
+              className={classes.circularsquare}
               alt="Remy Sharp"
-              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCLcY8R5uG_R4vTKW1D7onTKjOMACYS7wGA&usqp=CAU'
-              sx={{ width: 80, height: 80 }} />
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCLcY8R5uG_R4vTKW1D7onTKjOMACYS7wGA&usqp=CAU"
+              sx={{ width: 80, height: 80 }}
+            />
 
             <Typography
               gutterBottom
@@ -95,28 +70,45 @@ function Testimonials() {
               component="div"
               fontWeight="800"
               fontFamily="Open Sans "
-              fontSize="4rem"
+              fontSize="36px"
+              style={{
+                position: "absolute",
+                bottom: "430px",
+                left: "120px",
+                fontFamily: "Inter",
+              }}
             >
               Luther Mark
             </Typography>
 
-            {/* <Typography
+            <Typography
               gutterBottom
               variant="h3"
               align="right"
               component="div"
               fontWeight="800"
               fontFamily="Open Sans "
-              fontSize="4rem"
+              fontSize="64px"
+              style={{
+                position: "relative",
+                right: "60px",
+                bottom: "50px",
+              }}
             >
               Jacobs
-            </Typography> */}
+            </Typography>
 
             <Typography
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="30px"
+              style={{
+                position: "absolute",
+                bottom: "410px",
+                left: "120px",
+                fontFamily: "Inter",
+              }}
             >
               Regional Manager
             </Typography>
@@ -125,7 +117,13 @@ function Testimonials() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="30px"
+              style={{
+                position: "absolute",
+                bottom: "380px",
+                fontFamily: "Inter",
+                left: "120px",
+              }}
             >
               Jacobs Construction Co.
             </Typography>
@@ -134,25 +132,342 @@ function Testimonials() {
             <Typography
               variant="body1"
               color="text.primary"
-              fontWeight="500"
-              fontSize="2.5rem"
+              fontWeight="400"
+              fontSize="40px"
+              style={{
+                position: "absolute",
+                lineHeight: "50px",
+                top: "170px",
+                fontFamily: "Inter",
+                left: "120px",
+                height: "300px",
+                width: "700px",
+              }}
             >
-              Mauris eget varius sapien. Sed facilisis congue porta.
-              Nulla laoreet orci nulla, in dictum ligula laoreet nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Quisque vulputate adipiscing elit. Quisque vulputate
+              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+              laoreet orci nulla, in dictum ligula laoreet nec. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Quisque vulputate
+              adipiscing elit. Quisque vulputate
             </Typography>
             <br />
-
           </CardContent>
         </Card>
+      ),
     },
     {
       key: 2,
-      content: <img src="https://picsum.photos/800/802/?random" alt="2" />,
+      content: (
+        <Card
+          className={classes.card1}
+          sx={{ width: "1000px", height: "500px" }}
+        >
+          <CardContent>
+            <Avatar
+              className={classes.circularsquare}
+              alt="Remy Sharp"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCLcY8R5uG_R4vTKW1D7onTKjOMACYS7wGA&usqp=CAU"
+              sx={{ width: 80, height: 80 }}
+            />
+
+            <Typography
+              gutterBottom
+              variant="h3"
+              component="div"
+              fontWeight="800"
+              fontFamily="Open Sans "
+              fontSize="36px"
+              style={{
+                position: "absolute",
+                bottom: "430px",
+                left: "120px",
+                fontFamily: "Inter",
+              }}
+            >
+              Luther Mark
+            </Typography>
+
+            <Typography
+              gutterBottom
+              variant="h3"
+              align="right"
+              component="div"
+              fontWeight="800"
+              fontFamily="Open Sans "
+              fontSize="64px"
+              style={{
+                position: "relative",
+                right: "60px",
+                bottom: "50px",
+              }}
+            >
+              Jacobs
+            </Typography>
+
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+              style={{
+                position: "absolute",
+                bottom: "410px",
+                left: "120px",
+                fontFamily: "Inter",
+              }}
+            >
+              Regional Manager
+            </Typography>
+
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+              style={{
+                position: "absolute",
+                bottom: "380px",
+                fontFamily: "Inter",
+                left: "120px",
+              }}
+            >
+              Jacobs Construction Co.
+            </Typography>
+            <br />
+
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="400"
+              fontSize="40px"
+              style={{
+                position: "absolute",
+                lineHeight: "50px",
+                top: "170px",
+                fontFamily: "Inter",
+                left: "120px",
+                height: "300px",
+                width: "700px",
+              }}
+            >
+              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+              laoreet orci nulla, in dictum ligula laoreet nec. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Quisque vulputate
+              adipiscing elit. Quisque vulputate
+            </Typography>
+            <br />
+          </CardContent>
+        </Card>
+      ),
     },
     {
       key: 3,
-      content: <img src="https://picsum.photos/600/803/?random" alt="3" />,
+      content: (
+        <Card
+          className={classes.card1}
+          sx={{ width: "1000px", height: "500px" }}
+        >
+          <CardContent>
+            <Avatar
+              className={classes.circularsquare}
+              alt="Remy Sharp"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCLcY8R5uG_R4vTKW1D7onTKjOMACYS7wGA&usqp=CAU"
+              sx={{ width: 80, height: 80 }}
+            />
+
+            <Typography
+              gutterBottom
+              variant="h3"
+              component="div"
+              fontWeight="800"
+              fontFamily="Open Sans "
+              fontSize="36px"
+              style={{
+                position: "absolute",
+                bottom: "430px",
+                left: "120px",
+                fontFamily: "Inter",
+              }}
+            >
+              Luther Mark
+            </Typography>
+
+            <Typography
+              gutterBottom
+              variant="h3"
+              align="right"
+              component="div"
+              fontWeight="800"
+              fontFamily="Open Sans "
+              fontSize="64px"
+              style={{
+                position: "relative",
+                right: "60px",
+                bottom: "50px",
+              }}
+            >
+              Jacobs
+            </Typography>
+
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+              style={{
+                position: "absolute",
+                bottom: "410px",
+                left: "120px",
+                fontFamily: "Inter",
+              }}
+            >
+              Regional Manager
+            </Typography>
+
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+              style={{
+                position: "absolute",
+                bottom: "380px",
+                fontFamily: "Inter",
+                left: "120px",
+              }}
+            >
+              Jacobs Construction Co.
+            </Typography>
+            <br />
+
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="400"
+              fontSize="40px"
+              style={{
+                position: "absolute",
+                lineHeight: "50px",
+                top: "170px",
+                fontFamily: "Inter",
+                left: "120px",
+                height: "300px",
+                width: "700px",
+              }}
+            >
+              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+              laoreet orci nulla, in dictum ligula laoreet nec. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Quisque vulputate
+              adipiscing elit. Quisque vulputate
+            </Typography>
+            <br />
+          </CardContent>
+        </Card>
+      ),
+    },
+    {
+      key: 3,
+      content: (
+        <Card
+          className={classes.card1}
+          sx={{ width: "1000px", height: "500px" }}
+        >
+          <CardContent>
+            <Avatar
+              className={classes.circularsquare}
+              alt="Remy Sharp"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCLcY8R5uG_R4vTKW1D7onTKjOMACYS7wGA&usqp=CAU"
+              sx={{ width: 80, height: 80 }}
+            />
+
+            <Typography
+              gutterBottom
+              variant="h3"
+              component="div"
+              fontWeight="800"
+              fontFamily="Open Sans "
+              fontSize="36px"
+              style={{
+                position: "absolute",
+                bottom: "430px",
+                left: "120px",
+                fontFamily: "Inter",
+              }}
+            >
+              Luther Mark
+            </Typography>
+
+            <Typography
+              gutterBottom
+              variant="h3"
+              align="right"
+              component="div"
+              fontWeight="800"
+              fontFamily="Open Sans "
+              fontSize="64px"
+              style={{
+                position: "relative",
+                right: "60px",
+                bottom: "50px",
+              }}
+            >
+              Jacobs
+            </Typography>
+
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+              style={{
+                position: "absolute",
+                bottom: "410px",
+                left: "120px",
+                fontFamily: "Inter",
+              }}
+            >
+              Regional Manager
+            </Typography>
+
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="500"
+              fontSize="30px"
+              style={{
+                position: "absolute",
+                bottom: "380px",
+                fontFamily: "Inter",
+                left: "120px",
+              }}
+            >
+              Jacobs Construction Co.
+            </Typography>
+            <br />
+
+            <Typography
+              variant="body1"
+              color="text.primary"
+              fontWeight="400"
+              fontSize="40px"
+              style={{
+                position: "absolute",
+                lineHeight: "50px",
+                top: "170px",
+                fontFamily: "Inter",
+                left: "120px",
+                height: "300px",
+                width: "700px",
+              }}
+            >
+              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
+              laoreet orci nulla, in dictum ligula laoreet nec. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Quisque vulputate
+              adipiscing elit. Quisque vulputate
+            </Typography>
+            <br />
+          </CardContent>
+        </Card>
+      ),
     },
     // {
     //   key: 14,
