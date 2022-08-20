@@ -37,6 +37,9 @@ const useStyles = makeStyles({
     margin: "auto",
 
     border: "solid #BF0000",
+    boxShadow:
+      "4px 0px 17px -7px rgba(0, 0, 0, 0.25), -4px 0px 18px -7px rgba(0, 0, 0, 0.25)",
+    borderRadius: "15px",
   },
 });
 function Testimonials() {
@@ -92,7 +95,7 @@ function Testimonials() {
               style={{
                 position: "relative",
                 right: "60px",
-                bottom: "50px",
+                bottom: "70px",
               }}
             >
               Jacobs
@@ -147,7 +150,7 @@ function Testimonials() {
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec. Lorem ipsum
               dolor sit amet, consectetur adipiscing elit. Quisque vulputate
-              adipiscing elit. Quisque vulputate
+              adipiscing elit.
             </Typography>
             <br />
           </CardContent>
@@ -197,7 +200,7 @@ function Testimonials() {
               style={{
                 position: "relative",
                 right: "60px",
-                bottom: "50px",
+                bottom: "70px",
               }}
             >
               Jacobs
@@ -252,7 +255,7 @@ function Testimonials() {
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec. Lorem ipsum
               dolor sit amet, consectetur adipiscing elit. Quisque vulputate
-              adipiscing elit. Quisque vulputate
+              adipiscing elit.
             </Typography>
             <br />
           </CardContent>
@@ -302,7 +305,7 @@ function Testimonials() {
               style={{
                 position: "relative",
                 right: "60px",
-                bottom: "50px",
+                bottom: "70px",
               }}
             >
               Jacobs
@@ -357,118 +360,14 @@ function Testimonials() {
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec. Lorem ipsum
               dolor sit amet, consectetur adipiscing elit. Quisque vulputate
-              adipiscing elit. Quisque vulputate
+              adipiscing elit.
             </Typography>
             <br />
           </CardContent>
         </Card>
       ),
     },
-    {
-      key: 3,
-      content: (
-        <Card
-          className={classes.card1}
-          sx={{ width: "1000px", height: "500px" }}
-        >
-          <CardContent>
-            <Avatar
-              className={classes.circularsquare}
-              alt="Remy Sharp"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCLcY8R5uG_R4vTKW1D7onTKjOMACYS7wGA&usqp=CAU"
-              sx={{ width: 80, height: 80 }}
-            />
 
-            <Typography
-              gutterBottom
-              variant="h3"
-              component="div"
-              fontWeight="800"
-              fontFamily="Open Sans "
-              fontSize="36px"
-              style={{
-                position: "absolute",
-                bottom: "430px",
-                left: "120px",
-                fontFamily: "Inter",
-              }}
-            >
-              Luther Mark
-            </Typography>
-
-            <Typography
-              gutterBottom
-              variant="h3"
-              align="right"
-              component="div"
-              fontWeight="800"
-              fontFamily="Open Sans "
-              fontSize="64px"
-              style={{
-                position: "relative",
-                right: "60px",
-                bottom: "50px",
-              }}
-            >
-              Jacobs
-            </Typography>
-
-            <Typography
-              variant="body1"
-              color="text.primary"
-              fontWeight="500"
-              fontSize="30px"
-              style={{
-                position: "absolute",
-                bottom: "410px",
-                left: "120px",
-                fontFamily: "Inter",
-              }}
-            >
-              Regional Manager
-            </Typography>
-
-            <Typography
-              variant="body1"
-              color="text.primary"
-              fontWeight="500"
-              fontSize="30px"
-              style={{
-                position: "absolute",
-                bottom: "380px",
-                fontFamily: "Inter",
-                left: "120px",
-              }}
-            >
-              Jacobs Construction Co.
-            </Typography>
-            <br />
-
-            <Typography
-              variant="body1"
-              color="text.primary"
-              fontWeight="400"
-              fontSize="40px"
-              style={{
-                position: "absolute",
-                lineHeight: "50px",
-                top: "170px",
-                fontFamily: "Inter",
-                left: "120px",
-                height: "300px",
-                width: "700px",
-              }}
-            >
-              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
-              laoreet orci nulla, in dictum ligula laoreet nec. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit. Quisque vulputate
-              adipiscing elit. Quisque vulputate
-            </Typography>
-            <br />
-          </CardContent>
-        </Card>
-      ),
-    },
     // {
     //   key: 14,
     //   content: <img src="https://picsum.photos/800/500/?random" alt="4" />,
