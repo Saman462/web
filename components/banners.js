@@ -6,6 +6,7 @@ import { Box, Card, Link, CardContent, Typography, Stack } from "@mui/material";
 import Container from "@mui/material/Container";
 import { makeStyles } from "@material-ui/core";
 import banner1 from "../public/assets/Asset6_1.png";
+import useSWR from 'swr'
 import style from "../styles/Home.module.css";
 const useStyles = makeStyles({
   customimg: {
@@ -55,11 +56,15 @@ const useStyles = makeStyles({
 });
 function banners() {
   const classes = useStyles();
+  const { data, error } = useSWR('/api/home/products', (apiURL) => fetch(apiURL).then(res => res.json()))
+  console.log(data)
+  if (!data) return <div>loading...</div>;
+
   return (
     <>
       <Stack direction="row" spacing={2}>
         <Container className={classes.bannerContainer}>
-          <Image className={classes.customimg} src={banner1} layout="fill" />
+          <Image className={classes.customimg} src={data.img} layout="fill" />
         </Container>
         <Box
           sx={{
@@ -84,8 +89,7 @@ function banners() {
               fontFamily="Open Sans "
               fontSize="3 rem"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              vulputate adipiscing elit. Quisque vulputate
+              {data.name}
             </Typography>
             <br />
             <Typography
