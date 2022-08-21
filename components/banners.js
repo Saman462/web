@@ -8,22 +8,15 @@ import { makeStyles } from "@material-ui/core";
 import banner1 from "../public/assets/Asset6_1.png";
 import style from "../styles/Home.module.css";
 const useStyles = makeStyles({
-  customimg: {
-    objectFit: "contain",
-    position: "relative",
-    height: "unset",
-  },
   bannerContainer: {
     position: "relative",
-    right: "2rem",
-    height: "80rem",
-    width: "60rem",
-    bottom: "12rem",
+    height: "1280px",
+    bottom: "40px",
   },
   bannerContainer1: {
     position: "relative",
-    left: "20rem",
-    bottom: "15rem",
+    left: "320px",
+    bottom: "240px",
   },
   bannerContainer2: {
     bottom: "8rem",
@@ -47,8 +40,8 @@ const useStyles = makeStyles({
   },
   card3: {
     position: "relative",
-    bottom: "10rem",
-    right: "8rem",
+    bottom: "160px",
+    right: "128px",
     border: "none",
     boxShadow: "none",
   },
@@ -59,15 +52,15 @@ function banners() {
     <>
       <Stack direction="row" spacing={2}>
         <Container className={classes.bannerContainer}>
-          <Image className={classes.customimg} src={banner1} layout="fill" />
+          <Image src={banner1} width="850px" height="950px" />
         </Container>
         <Box
           sx={{
             backgroundColor: "#C41E3A",
             width: "18px",
             height: "170px",
-            right: "8rem",
-            top: "7.3rem",
+            right: "128px",
+            top: "116.8px",
             position: "relative",
           }}
         ></Box>
@@ -81,8 +74,8 @@ function banners() {
               variant="h3"
               component="div"
               fontWeight="800"
-              fontFamily="Open Sans "
-              fontSize="3 rem"
+              fontFamily="Lao Sans Pro"
+              fontSize="48px"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               vulputate adipiscing elit. Quisque vulputate
@@ -92,7 +85,9 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="40px"
+              fontFamily="Lao Sans Pro"
+              lineHeight="40px"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -103,7 +98,9 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="40px"
+              fontFamily="Lao Sans Pro"
+              lineHeight="40px"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -113,16 +110,31 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="40px"
+              fontFamily="Lao Sans Pro"
+              lineHeight="40px"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
             </Typography>
             <br />
             <br />
-            <Typography color="text.primary" fontWeight="500" fontSize="2.5rem">
+            <Typography
+              color="text.primary"
+              fontWeight="500"
+              fontSize="40px"
+              fontFamily="Lao Sans Pro"
+              lineHeight="40px"
+            >
               Lorem ispum vestibulum.
-              <Link href="#" fontWeight="600" fontSize="2.5rem" color="#d32f2f">
+              <Link
+                href="#"
+                fontWeight="600"
+                fontSize="40px"
+                color="#d32f2f"
+                fontFamily="Lao Sans Pro"
+                lineHeight="40px"
+              >
                 Lorem ipsum vel nulla
               </Link>
             </Typography>
@@ -135,8 +147,8 @@ function banners() {
             backgroundColor: "#D70040",
             width: "18px",
             height: "170px",
-            bottom: "15rem",
-            left: "12rem",
+            bottom: "240px",
+            left: "192px",
             position: "relative",
           }}
         ></Box>
@@ -150,8 +162,8 @@ function banners() {
               variant="h3"
               component="div"
               fontWeight="800"
-              fontFamily="Open Sans "
-              fontSize="3rem"
+              fontFamily="Lao Sans Pro"
+              fontSize="48px"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               vulputateadipiscing elit. Quisque vulputate
@@ -161,7 +173,9 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="40px"
+              fontFamily="Lao Sans Pro"
+              lineHeight="40px"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -172,7 +186,9 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontFamily="Lao Sans Pro"
+              fontSize="40px"
+              lineHeight="40px"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -182,16 +198,31 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="40px"
+              fontFamily="Lao Sans Pro"
+              lineHeight="40px"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
             </Typography>
             <br />
             <br />
-            <Typography color="text.primary" fontWeight="500" fontSize="2.5rem">
+            <Typography
+              color="text.primary"
+              fontWeight="500"
+              fontSize="40px"
+              fontFamily="Lao Sans Pro"
+              lineHeight="40px"
+            >
               Lorem ispum vestibulum.
-              <Link href="#" fontWeight="600" fontSize="2.5rem" color="#d32f2f">
+              <Link
+                href="#"
+                fontWeight="600"
+                fontSize="40px"
+                fontFamily="Lao Sans Pro"
+                color="#d32f2f"
+                lineHeight="40px"
+              >
                 Lorem ipsum vel nulla
               </Link>
             </Typography>
@@ -199,8 +230,8 @@ function banners() {
         </Card>
         <Container className={classes.bannerContainer1}>
           <Image
-            width=" 900px"
-            height="700px"
+            width=" 850px"
+            height="650px"
             objectFit="fill"
             src={assettag}
           />
@@ -209,8 +240,8 @@ function banners() {
       <Stack direction="row" spacing={2}>
         <Container className={classes.bannerContainer2}>
           <Image
-            width=" 900px"
-            height="700px"
+            width=" 850px"
+            height="650px"
             objectFit="cover"
             src={deeproad}
           />
@@ -220,8 +251,8 @@ function banners() {
             backgroundColor: "#C41E3A",
             width: "18px",
             height: "170px",
-            right: "7rem",
-            bottom: "8.5rem",
+            right: "112px",
+            bottom: "136px",
             position: "relative",
           }}
         ></Box>
@@ -235,18 +266,20 @@ function banners() {
               variant="h3"
               component="div"
               fontWeight="800"
-              fontFamily="Open Sans "
-              fontSize="3 rem"
+              fontFamily="Lao Sans Pro"
+              fontSize="48px"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              Lorem ipsum dolor sit amet, consectetur
+              Lorem ipsum dolor sit amet, consectetur adipiscing Quisque Lorem
+              ipsum dolor sit amet, consectetur
             </Typography>
             <br />
             <Typography
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="40px"
+              fontFamily="Lao Sans Pro"
+              lineHeight="40px"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -257,7 +290,9 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="40px"
+              fontFamily="Lao Sans Pro"
+              lineHeight="40px"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
@@ -267,16 +302,31 @@ function banners() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="40px"
+              fontFamily="Lao Sans Pro"
+              lineHeight="40px"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla, in dictum ligula laoreet nec.
             </Typography>
             <br />
             <br />
-            <Typography color="text.primary" fontWeight="500" fontSize="2.5rem">
+            <Typography
+              color="text.primary"
+              fontWeight="500"
+              fontSize="40px"
+              fontFamily="Lao Sans Pro"
+              lineHeight="40px"
+            >
               Lorem ispum vestibulum.
-              <Link href="#" fontWeight="600" fontSize="2.5rem" color="#d32f2f">
+              <Link
+                href="#"
+                fontWeight="600"
+                fontSize="40px"
+                color="#d32f2f"
+                fontFamily="Lao Sans Pro"
+                lineHeight="40px"
+              >
                 Lorem ipsum vel nulla
               </Link>
             </Typography>
