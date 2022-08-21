@@ -4,6 +4,7 @@ import assettag from "../public/assets/assettag.png";
 import { Box, Typography, Stack } from "@mui/material";
 import Container from "@mui/material/Container";
 import { makeStyles } from "@material-ui/core";
+import useSWR from 'swr'
 const useStyles = makeStyles({
   sbanner: {
     position: "relative",
@@ -29,17 +30,15 @@ const useStyles = makeStyles({
 });
 function partnerLogos() {
   const classes = useStyles();
+  const { data, error } = useSWR('/api/home/partners', (apiURL) => fetch(apiURL).then(res => res.json()))
+  if (!data) return <div>loading...</div>;
   return (
     <Stack direction="row" spacing={2}>
-      <Container className={classes.sbanner}>
-        <Image objectFit="cover" src={assettag} />
-      </Container>
-      <Container className={classes.sbanner1}>
-        <Image objectFit="cover" src={assettag} />
-      </Container>
-      <Container className={classes.sbanner2}>
-        <Image objectFit="cover" src={assettag} />
-      </Container>
+      {data.map((data) =>
+        <Container className={classes.sbanner}>
+          <Image objectFit="cover" src={data.partnerLogo} layout="fill" />
+        </Container>
+      )}
       <Box
         sx={{
           position: "absolute",
