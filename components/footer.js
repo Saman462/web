@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     right: "100px",
   },
   logoContainer: {
-    width: "650px",
+    width: "550px",
     margin: "auto",
     position: "relative",
     right: "105px",
@@ -66,7 +66,7 @@ function footer() {
           component="div"
           fontWeight="800"
           fontFamily="Open Sans "
-          fontSize="68px"
+          fontSize="55px"
           color=" #555555
            "
           style={{
@@ -84,7 +84,7 @@ function footer() {
           component="div"
           fontWeight="800"
           fontFamily="Open Sans "
-          fontSize="68px"
+          fontSize="55px"
           color=" #555555
           "
           style={{
@@ -102,7 +102,7 @@ function footer() {
           component="div"
           fontWeight="800"
           fontFamily="Open Sans "
-          fontSize="68px"
+          fontSize="55px"
           color=" #555555
           "
           style={{
@@ -120,7 +120,7 @@ function footer() {
           component="div"
           fontWeight="800"
           fontFamily="Open Sans "
-          fontSize="68px"
+          fontSize="55px"
           color=" #555555
           "
           style={{
@@ -138,7 +138,7 @@ function footer() {
           component="div"
           fontWeight="800"
           fontFamily="Open Sans "
-          fontSize="68px"
+          fontSize="55px"
           color=" #555555
           "
           style={{

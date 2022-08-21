@@ -38,7 +38,8 @@ function blogs() {
               color="text.primary"
               backgroundColor="#C0C0C0"
               fontWeight="600"
-              fontSize="2.5rem"
+              fontSize="40px"
+              fontFamily="Lato"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
             </Typography>
@@ -53,8 +54,8 @@ function blogs() {
             width: "15px",
             height: "150px",
             position: "relative",
-            bottom: "24rem",
-            left: "5rem",
+            bottom: "384px",
+            left: "80px",
           }}
         />
         <Box
@@ -63,8 +64,8 @@ function blogs() {
             width: "15px",
             height: "150px",
             position: "relative",
-            bottom: "20rem",
-            left: "5rem",
+            bottom: "320px",
+            left: "80px",
           }}
         />
         <Box
@@ -73,8 +74,8 @@ function blogs() {
             width: "15px",
             height: "150px",
             position: "relative",
-            bottom: "17rem",
-            left: "5rem",
+            bottom: "272px",
+            left: "80px",
           }}
         />
         <Box
@@ -83,8 +84,8 @@ function blogs() {
             width: "15px",
             height: "150px",
             position: "relative",
-            bottom: "13rem",
-            left: "5rem",
+            bottom: "208px",
+            left: "80px",
           }}
         />
         <Card
@@ -95,8 +96,8 @@ function blogs() {
             border: "none",
             boxShadow: "none",
             position: "relative",
-            bottom: "63rem",
-            left: "6rem",
+            bottom: "1008px",
+            left: "96px",
           }}
         >
           <CardContent>
@@ -104,7 +105,8 @@ function blogs() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="40px"
+              fontFamily="Lato"
             >
               Mauris eget varius sapien. Sed facilisis congue porta.
             </Typography>
@@ -113,9 +115,10 @@ function blogs() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="40px"
               position="relative"
-              top="6rem"
+              fontFamily="Lato"
+              top="96px"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet laoreet nec.
@@ -125,9 +128,10 @@ function blogs() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="40px"
               position="relative"
-              top="11rem"
+              top="176px"
+              fontFamily="Lato"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet
@@ -137,9 +141,10 @@ function blogs() {
               variant="body1"
               color="text.primary"
               fontWeight="500"
-              fontSize="2.5rem"
+              fontSize="40px"
+              fontFamily="Lato"
               position="relative"
-              top="17rem"
+              top="272px"
             >
               Mauris eget varius sapien. Sed facilisis congue porta. Nulla
               laoreet orci nulla,
@@ -160,13 +165,13 @@ function blogs() {
           <CardContent>
             <Typography
               position="relative"
-              top="10rem"
+              top="160px"
               gutterBottom
               variant="h3"
               component="div"
               fontWeight="800"
-              fontFamily="Open Sans "
-              fontSize="3rem"
+              fontFamily="Lato"
+              fontSize="48px"
             >
               Lorem ipsum dolor sit amet, ipsum dolor sit amet, consectetur
               adipiscing elit.
@@ -175,13 +180,21 @@ function blogs() {
             <Typography
               color="text.primary"
               position="relative"
-              fontWeight="500"
-              fontSize="2.5rem"
-              top="15rem"
+              fontFamily="Lato"
+              fontWeight="400"
+              fontSize="40px"
+              top="300px"
+              left="40px"
             >
               Lorem ispum vestibulum.
               <br />
-              <Link href="#" fontWeight="600" fontSize="2.5rem" color="#d32f2f">
+              <Link
+                href="#"
+                fontWeight="600"
+                fontSize="40px"
+                color="#d32f2f"
+                fontFamily="Lato"
+              >
                 Lorem ipsum vel
               </Link>
             </Typography>

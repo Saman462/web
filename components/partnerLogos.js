@@ -7,22 +7,22 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles({
   sbanner: {
     position: "relative",
-    right: "38rem",
-    bottom: "2rem",
+    right: "608px",
+    bottom: "32px",
     height: "900px",
     width: "350px",
   },
   sbanner1: {
     position: "relative",
-    right: "82.5rem",
-    bottom: "2rem",
+    right: "1320px",
+    bottom: "32px",
     height: "900px",
     width: "350px",
   },
   sbanner2: {
     position: "relative",
-    right: "82rem",
-    bottom: "2rem",
+    right: "1312px",
+    bottom: "32px",
     height: "900px",
     width: "350px",
   },
@@ -43,7 +43,7 @@ function partnerLogos() {
       <Box
         sx={{
           position: "absolute",
-          left: "87rem",
+          left: "1392px",
           height: "20px",
           width: "900px",
         }}
@@ -51,9 +51,9 @@ function partnerLogos() {
         <Typography
           variant="h3"
           color="text.primary"
-          texAtlign="center"
           fontWeight="650"
-          fontSize="2.5rem"
+          font-family="Lato"
+          fontSize="40px"
         >
           Lörem ipsum mikrosel nyranade. Trigt nism i säns. Krovevåment sos inte
           homost.Krovevåment sos inte homost.
