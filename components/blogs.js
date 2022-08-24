@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Card, Link, CardContent, Typography, Stack } from "@mui/material";
 import Container from "@mui/material/Container";
 import { makeStyles } from "@material-ui/core";
+import useSWR from 'swr'
 
 const useStyles = makeStyles({
   bannerContainer: {
@@ -13,6 +14,11 @@ const useStyles = makeStyles({
 
 function blogs() {
   const classes = useStyles();
+  const { data, error } = useSWR('/api/home/news', (apiURL) => fetch(apiURL).then(res => res.json()))
+  // console.log(data ? data[0].newsTitle : 'not found', 'news')
+  console.log(data)
+  if (!data) return <div>loading...</div>;
+  
   return (
     <Stack direction="row" spacing={2}>
       <Container className={classes.bannerContainer}>
@@ -33,16 +39,20 @@ function blogs() {
                 backgroundColor: "#DCDCDC",
               }}
             ></Box>
-            <Typography
-              variant="body1"
-              color="text.primary"
-              backgroundColor="#C0C0C0"
-              fontWeight="600"
-              fontSize="40px"
-              fontFamily="Lato"
-            >
-              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
-            </Typography>
+            {/* {data.map((eachData) => */}
+              <Typography
+                variant="body1"
+                color="text.primary"
+                backgroundColor="#C0C0C0"
+                fontWeight="600"
+                fontSize="40px"
+                fontFamily="Lato"
+              >
+                {data.newsTitle}
+                {/* {Object.values(eachData[0].newsHeadlines)} */}
+                {/* {eachData ? eachData[index].newsHeadlines : 'not found'} */}
+              </Typography>
+            {/* )} */}
           </CardContent>
         </Card>
       </Container>
@@ -100,56 +110,24 @@ function blogs() {
             left: "96px",
           }}
         >
-          <CardContent>
-            <Typography
-              variant="body1"
-              color="text.primary"
-              fontWeight="500"
-              fontSize="40px"
-              fontFamily="Lato"
-            >
-              Mauris eget varius sapien. Sed facilisis congue porta.
-            </Typography>
+          {data.newsHeadlines.map((eachData) =>
 
-            <Typography
-              variant="body1"
-              color="text.primary"
-              fontWeight="500"
-              fontSize="40px"
-              position="relative"
-              fontFamily="Lato"
-              top="96px"
-            >
-              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
-              laoreet laoreet nec.
-            </Typography>
+            <CardContent>
+              <Typography
+                variant="body1"
+                color="text.primary"
+                fontWeight="500"
+                fontSize="40px"
+                fontFamily="Lato"
+              >
+                {eachData.newsHeadline}
+              </Typography>
+              <br />
+              <br />
+              <br />
 
-            <Typography
-              variant="body1"
-              color="text.primary"
-              fontWeight="500"
-              fontSize="40px"
-              position="relative"
-              top="176px"
-              fontFamily="Lato"
-            >
-              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
-              laoreet
-            </Typography>
-
-            <Typography
-              variant="body1"
-              color="text.primary"
-              fontWeight="500"
-              fontSize="40px"
-              fontFamily="Lato"
-              position="relative"
-              top="272px"
-            >
-              Mauris eget varius sapien. Sed facilisis congue porta. Nulla
-              laoreet orci nulla,
-            </Typography>
-          </CardContent>
+            </CardContent>
+          )}
         </Card>
       </Container>
       <Container className={classes.bannerContainer}>
@@ -173,8 +151,7 @@ function blogs() {
               fontFamily="Lato"
               fontSize="48px"
             >
-              Lorem ipsum dolor sit amet, ipsum dolor sit amet, consectetur
-              adipiscing elit.
+              {data.newsText1}
             </Typography>
 
             <Typography
@@ -186,7 +163,7 @@ function blogs() {
               top="300px"
               left="40px"
             >
-              Lorem ispum vestibulum.
+              {data.newsText2}
               <br />
               <Link
                 href="#"
@@ -195,7 +172,7 @@ function blogs() {
                 color="#d32f2f"
                 fontFamily="Lato"
               >
-                Lorem ipsum vel
+                {data.newsLink}
               </Link>
             </Typography>
           </CardContent>

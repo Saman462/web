@@ -1,16 +1,21 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import assettag from "../../../public/assets/assettag.png";y
+import assettag from "../../../public/assets/assettag.png";
 
 export default function handler(req, res) {
-    res.status(200).json([
+    res.status(200).json(
         {
-            partnerLogo: assettag.src,
-        }, 
-        {
-            partnerLogo: assettag.src,
-        }, 
-        {
-            partnerLogo: assettag.src,
+            partnerText: 'Lörem ipsum mikrosel nyranade. Trigt nism i säns. Krovevåment sos inte homost.Krovevåment sos inte homost.',
+            partnerLogos: [
+                {
+                    partnerLogo: assettag.src,
+                }, 
+                {
+                    partnerLogo: assettag.src,
+                }, 
+                {
+                    partnerLogo: assettag.src,
+                }
+            ]
         }
-    ])
+    )
 }

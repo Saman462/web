@@ -34,11 +34,11 @@ function partnerLogos() {
   if (!data) return <div>loading...</div>;
   return (
     <Stack direction="row" spacing={2}>
-      {data.map((data) =>
-        <Container className={classes.sbanner}>
-          <Image objectFit="cover" src={data.partnerLogo} layout="fill" />
-        </Container>
-      )}
+      <Container className={classes.sbanner}>
+        {data.partnerLogos.map((eachData) =>
+          <Image src={eachData.partnerLogo} layout="fill" />
+        )}
+      </Container>
       <Box
         sx={{
           position: "absolute",
@@ -54,8 +54,7 @@ function partnerLogos() {
           font-family="Lato"
           fontSize="40px"
         >
-          Lörem ipsum mikrosel nyranade. Trigt nism i säns. Krovevåment sos inte
-          homost.Krovevåment sos inte homost.
+          {data.partnerText}
         </Typography>
       </Box>
     </Stack>

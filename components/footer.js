@@ -15,6 +15,8 @@ import { makeStyles } from "@material-ui/core";
 import Logo from "../public/assets/Asset 1.png";
 import Image from "next/image";
 import assettag from "../public/assets/assettag.png";
+import useSWR from 'swr';
+
 const useStyles = makeStyles({
   bannerContainer: {
     position: "relative",
@@ -49,6 +51,8 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 function footer() {
   const classes = useStyles();
+  const { data, error } = useSWR('/api/home/footerSection', (apiURL) => fetch(apiURL).then(res => res.json()))
+  if (!data) return <div>loading...</div>;
   return (
     <Stack direction="row" spacing={2}>
       <Container className={classes.bannerContainer}>
@@ -168,8 +172,7 @@ function footer() {
             left: "2px",
           }}
         >
-          Mauris eget varius sapien. Sed facilisis congue porta. Nulla laoreet
-          orci nulla, in dictum ligula laoreet nec.
+          {data.footerText1}
         </Typography>
         <br />
         <br />
@@ -193,8 +196,7 @@ function footer() {
             color: " #000000",
           }}
         >
-          Mauris eget varius sapien. Sed facilisis congue porta. Nulla laoreet
-          orci nulla, in dictum ligula laoreet nec.
+          {data.footerText2}
         </Typography>
       </Container>
       <Container className={classes.bannerContainer}>
@@ -265,26 +267,13 @@ function footer() {
           columnSpacing={{ xs: 1, sm: 2, md: 9 }}
           style={{ position: "absolute", top: "300px" }}
         >
+          {data.footerLogos.map((eachData) =>
           <Grid item xs={6}>
             <Item>
-              <Image src={assettag} />
+              <Image src={eachData.footerLogo} layout="fill" />
             </Item>
           </Grid>
-          <Grid item xs={6}>
-            <Item>
-              <Image src={assettag} />
-            </Item>
-          </Grid>
-          <Grid item xs={6}>
-            <Item>
-              <Image src={assettag} />
-            </Item>
-          </Grid>
-          <Grid item xs={6}>
-            <Item>
-              <Image src={assettag} />
-            </Item>
-          </Grid>
+          )}
         </Grid>
       </Container>
     </Stack>
