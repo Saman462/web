@@ -34,11 +34,24 @@ function partnerLogos() {
   if (!data) return <div>loading...</div>;
   return (
     <Stack direction="row" spacing={2}>
-      <Container className={classes.sbanner}>
-        {data.partnerLogos.map((eachData) =>
+      {/* {data.partnerLogos.map((index,eachData) =>
+      
+        <Container className={classes.sbanner}>
           <Image src={eachData.partnerLogo} layout="fill" />
-        )}
-      </Container>
+        </Container>
+      )} */}
+      <Container className={classes.sbanner}>
+          <Image src={assettag} layout="fill" />
+        </Container>
+        
+        <Container className={classes.sbanner1}>
+          <Image src={assettag} layout="fill" />
+        </Container>
+
+        <Container className={classes.sbanner2}>
+          <Image src={assettag} layout="fill" />
+        </Container>
+
       <Box
         sx={{
           position: "absolute",

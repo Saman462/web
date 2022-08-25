@@ -267,13 +267,35 @@ function footer() {
           columnSpacing={{ xs: 1, sm: 2, md: 9 }}
           style={{ position: "absolute", top: "300px" }}
         >
-          {data.footerLogos.map((eachData) =>
+          {/* {data.footerLogos.map((eachData) =>
           <Grid item xs={6}>
             <Item>
               <Image src={eachData.footerLogo} layout="fill" />
             </Item>
           </Grid>
-          )}
+          )} */}
+
+<Grid item xs={6}>
+            <Item>
+              <Image src={assettag} />
+            </Item>
+          </Grid>
+          <Grid item xs={6}>
+            <Item>
+              <Image src={assettag} />
+            </Item>
+          </Grid>
+          <Grid item xs={6}>
+            <Item>
+              <Image src={assettag} />
+            </Item>
+          </Grid>
+          <Grid item xs={6}>
+            <Item>
+              <Image src={assettag} />
+            </Item>
+          </Grid>
+
         </Grid>
       </Container>
     </Stack>
