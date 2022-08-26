@@ -6,68 +6,51 @@ import { Box, Card, Link, CardContent, Typography, Stack } from "@mui/material";
 import Container from "@mui/material/Container";
 import { makeStyles } from "@material-ui/core";
 import banner1 from "../public/assets/Asset6_1.png";
-import useSWR from 'swr'
+import useSWR from "swr";
 import style from "../styles/Home.module.css";
 const useStyles = makeStyles({
   bannerContainer: {
     position: "relative",
-    height: "1280px",
-    bottom: "40px",
+    padding: "230px",
+    margin: "80px 150px",
+    padding: "20px",
+    width: "40%",
+    height: "60vh",
   },
-  bannerContainer1: {
-    position: "relative",
-    left: "320px",
-    bottom: "240px",
-  },
-  bannerContainer2: {
-    bottom: "8rem",
-    left: "5rem",
-    position: "relative",
-  },
+
   card1: {
     position: "relative",
-    right: "8rem",
-    margin: "auto",
-    top: "6rem",
+    width: "40%",
+
+    top: "60px",
     border: "none",
     boxShadow: "none",
-  },
-  card2: {
-    left: "12rem",
-    bottom: "16rem",
-    position: "relative",
-    border: "none",
-    boxShadow: "none",
-  },
-  card3: {
-    position: "relative",
-    bottom: "160px",
-    right: "128px",
-    border: "none",
-    boxShadow: "none",
+    margin: "20px auto",
+    display: "flex",
   },
 });
 function banners() {
   const classes = useStyles();
-  const { data, error } = useSWR('/api/home/products', (apiURL) => fetch(apiURL).then(res => res.json()))
+  const { data, error } = useSWR("/api/home/products", (apiURL) =>
+    fetch(apiURL).then((res) => res.json())
+  );
   if (!data) return <div>loading...</div>;
 
   return (
     <>
-      {data.map((data) =>
+      {data.map((data) => (
         <Stack direction="row" spacing={2}>
           <Container className={classes.bannerContainer}>
-            <Image className={classes.customimg} src={data.productImage} layout="fill" />
+            <Image src={data.productImage} layout="fill" objectFit="fill" />
           </Container>
 
           <Box
             sx={{
               backgroundColor: "#C41E3A",
-              width: "18px",
-              height: "170px",
-              right: "128px",
-              top: "116.8px",
+              height: "160px",
+              padding: "10px",
               position: "relative",
+              top: "78px",
             }}
           ></Box>
 
@@ -81,8 +64,8 @@ function banners() {
                 variant="h3"
                 component="div"
                 fontWeight="800"
-                fontFamily="Lao Sans Pro"
-                fontSize="48px"
+                fontFamily="Lato"
+                fontSize="4vmin"
               >
                 {data.productName}
               </Typography>
@@ -91,9 +74,9 @@ function banners() {
                 variant="body1"
                 color="text.primary"
                 fontWeight="500"
-                fontSize="40px"
-                fontFamily="Lao Sans Pro"
-                lineHeight="40px"
+                fontSize="3vmin"
+                fontFamily="Lato"
+                lineHeight="3vmin"
               >
                 {data.productDescription}
               </Typography>
@@ -102,17 +85,17 @@ function banners() {
               <Link
                 href="#"
                 fontWeight="600"
-                fontSize="40px"
+                fontSize="3vmin"
                 color="#d32f2f"
-                fontFamily="Lao Sans Pro"
-                lineHeight="40px"
+                fontFamily="Lato"
+                lineHeight="3vmin"
               >
                 {data.productLink}
               </Link>
             </CardContent>
           </Card>
         </Stack>
-      )}
+      ))}
     </>
   );
 }

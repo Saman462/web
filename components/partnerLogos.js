@@ -4,33 +4,35 @@ import assettag from "../public/assets/assettag.png";
 import { Box, Typography, Stack } from "@mui/material";
 import Container from "@mui/material/Container";
 import { makeStyles } from "@material-ui/core";
-import useSWR from 'swr'
+import useSWR from "swr";
 const useStyles = makeStyles({
   sbanner: {
     position: "relative",
     right: "608px",
     bottom: "32px",
-    height: "900px",
+    height: "400px",
     width: "350px",
   },
   sbanner1: {
     position: "relative",
     right: "1320px",
     bottom: "32px",
-    height: "900px",
+    height: "400px",
     width: "350px",
   },
   sbanner2: {
     position: "relative",
     right: "1312px",
     bottom: "32px",
-    height: "900px",
+    height: "400px",
     width: "350px",
   },
 });
 function partnerLogos() {
   const classes = useStyles();
-  const { data, error } = useSWR('/api/home/partners', (apiURL) => fetch(apiURL).then(res => res.json()))
+  const { data, error } = useSWR("/api/home/partners", (apiURL) =>
+    fetch(apiURL).then((res) => res.json())
+  );
   if (!data) return <div>loading...</div>;
   return (
     <Stack direction="row" spacing={2}>
@@ -41,16 +43,16 @@ function partnerLogos() {
         </Container>
       )} */}
       <Container className={classes.sbanner}>
-          <Image src={assettag} layout="fill" />
-        </Container>
-        
-        <Container className={classes.sbanner1}>
-          <Image src={assettag} layout="fill" />
-        </Container>
+        <Image src={assettag} layout="fill" />
+      </Container>
 
-        <Container className={classes.sbanner2}>
-          <Image src={assettag} layout="fill" />
-        </Container>
+      <Container className={classes.sbanner1}>
+        <Image src={assettag} layout="fill" />
+      </Container>
+
+      <Container className={classes.sbanner2}>
+        <Image src={assettag} layout="fill" />
+      </Container>
 
       <Box
         sx={{

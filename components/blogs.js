@@ -2,23 +2,23 @@ import React from "react";
 import { Box, Card, Link, CardContent, Typography, Stack } from "@mui/material";
 import Container from "@mui/material/Container";
 import { makeStyles } from "@material-ui/core";
-import useSWR from 'swr'
+import useSWR from "swr";
 
 const useStyles = makeStyles({
   bannerContainer: {
     position: "relative",
-    bottom: "25rem",
-    left: "5rem",
   },
 });
 
 function blogs() {
   const classes = useStyles();
-  const { data, error } = useSWR('/api/home/news', (apiURL) => fetch(apiURL).then(res => res.json()))
+  const { data, error } = useSWR("/api/home/news", (apiURL) =>
+    fetch(apiURL).then((res) => res.json())
+  );
   // console.log(data ? data[0].newsTitle : 'not found', 'news')
-  console.log(data)
+  console.log(data);
   if (!data) return <div>loading...</div>;
-  
+
   return (
     <Stack direction="row" spacing={2}>
       <Container className={classes.bannerContainer}>
@@ -40,24 +40,24 @@ function blogs() {
               }}
             ></Box>
             {/* {data.map((eachData) => */}
-              <Typography
-                variant="body1"
-                color="text.primary"
-                backgroundColor="#C0C0C0"
-                fontWeight="600"
-                fontSize="40px"
-                fontFamily="Lato"
-              >
-                {data.newsTitle}
-                {/* {Object.values(eachData[0].newsHeadlines)} */}
-                {/* {eachData ? eachData[index].newsHeadlines : 'not found'} */}
-              </Typography>
+            <Typography
+              variant="body1"
+              color="text.primary"
+              backgroundColor="#C0C0C0"
+              fontWeight="600"
+              fontSize="40px"
+              fontFamily="Lato"
+            >
+              {data.newsTitle}
+              {/* {Object.values(eachData[0].newsHeadlines)} */}
+              {/* {eachData ? eachData[index].newsHeadlines : 'not found'} */}
+            </Typography>
             {/* )} */}
           </CardContent>
         </Card>
       </Container>
 
-      <Container className={classes.bannerContainer1}>
+      <Container className={classes.bannerContainer}>
         <Box
           sx={{
             backgroundColor: "#C41E3A",
@@ -84,8 +84,6 @@ function blogs() {
             width: "15px",
             height: "150px",
             position: "relative",
-            bottom: "272px",
-            left: "80px",
           }}
         />
         <Box
@@ -94,24 +92,20 @@ function blogs() {
             width: "15px",
             height: "150px",
             position: "relative",
-            bottom: "208px",
-            left: "80px",
           }}
         />
         <Card
-          className={classes.card3}
+          style={{
+            position: "absolute",
+          }}
           sx={{
             width: "800px",
             height: "785px",
             border: "none",
             boxShadow: "none",
-            position: "relative",
-            bottom: "1008px",
-            left: "96px",
           }}
         >
-          {data.newsHeadlines.map((eachData) =>
-
+          {data.newsHeadlines.map((eachData) => (
             <CardContent>
               <Typography
                 variant="body1"
@@ -125,9 +119,8 @@ function blogs() {
               <br />
               <br />
               <br />
-
             </CardContent>
-          )}
+          ))}
         </Card>
       </Container>
       <Container className={classes.bannerContainer}>

@@ -37,13 +37,11 @@ export default function Home() {
       <div className={style.testimonials}>
         <Testimonials />
       </div>
-      <div>
+      <div className={style.lines}>
         <Line />
       </div>
 
-      <div className={style.Blogs}>
-        <Blogs />
-      </div>
+      <div className={style.Blog}>{/* <Blogs /> */}</div>
     </>
   );
 }
