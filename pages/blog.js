@@ -1,18 +1,21 @@
-/*
-import { Container, Box } from '@mui/material';
-import { makeStyles } from "@material-ui/core";
-import Image from "next/image";
-import banner1 from '../public/assets/Asset 6_1.png'
-import road from "../public/assets/Road.png";
-
-const blog = (props) => {
-   
+import { Typography } from '@mui/material';
+import React from 'react';
+import Line from '../components/lines'
+function blog(props) {
     return (
         <div>
-            hello
-            </div>
+            <Typography
+                gutterBottom
+                variant="h3"
+                component="div"
+                fontWeight="800"
+                fontFamily="Lato"
+                fontSize="7.5vmin"
+            >
+                BLOGS
+            </Typography>
+        </div>
     );
 }
 
 export default blog;
-*/
