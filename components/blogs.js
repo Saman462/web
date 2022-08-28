@@ -25,8 +25,8 @@ function blogs() {
         <Card
           className={classes.card1}
           sx={{
-            width: "800px",
-            height: "800px",
+            width: "35vw",
+            height: "70vh",
             border: "none",
             boxShadow: "none",
           }}
@@ -34,8 +34,8 @@ function blogs() {
           <CardContent>
             <Box
               sx={{
-                width: "770px",
-                height: "650px",
+                width: "100%",
+                height: "56vh",
                 backgroundColor: "#DCDCDC",
               }}
             ></Box>
@@ -45,8 +45,9 @@ function blogs() {
               color="text.primary"
               backgroundColor="#C0C0C0"
               fontWeight="600"
-              fontSize="40px"
+              fontSize="3.6vmin"
               fontFamily="Lato"
+              height="20vh"
             >
               {data.newsTitle}
               {/* {Object.values(eachData[0].newsHeadlines)} */}
@@ -62,45 +63,51 @@ function blogs() {
           sx={{
             backgroundColor: "#C41E3A",
             width: "15px",
-            height: "150px",
+            height: "13vh",
             position: "relative",
-            bottom: "384px",
-            left: "80px",
+            top: "20px",
+            left: "30px",
           }}
         />
         <Box
           sx={{
             backgroundColor: "#C41E3A",
             width: "15px",
-            height: "150px",
+            height: "13vh",
             position: "relative",
-            bottom: "320px",
-            left: "80px",
+            top: "80px",
+            left: "30px",
           }}
         />
         <Box
           sx={{
             backgroundColor: "#C41E3A",
             width: "15px",
-            height: "150px",
+            height: "13vh",
             position: "relative",
+            top: "140px",
+            left: "30px",
           }}
         />
         <Box
           sx={{
             backgroundColor: "#C41E3A",
             width: "15px",
-            height: "150px",
+            height: "13vh",
             position: "relative",
+            top: "200px",
+            left: "30px",
           }}
         />
         <Card
           style={{
-            position: "absolute",
+            position: "relative",
+            bottom: "600px",
+            left: "50px",
           }}
           sx={{
-            width: "800px",
-            height: "785px",
+            width: "100%",
+            height: "70vh",
             border: "none",
             boxShadow: "none",
           }}
@@ -111,7 +118,7 @@ function blogs() {
                 variant="body1"
                 color="text.primary"
                 fontWeight="500"
-                fontSize="40px"
+                fontSize="3.5vmin"
                 fontFamily="Lato"
               >
                 {eachData.newsHeadline}
@@ -127,8 +134,8 @@ function blogs() {
         <Card
           className={classes.card3}
           sx={{
-            width: "650px",
-            height: "800px",
+            width: "100%",
+            height: "66vh",
             border: "none",
             boxShadow: "none",
           }}
@@ -142,7 +149,7 @@ function blogs() {
               component="div"
               fontWeight="800"
               fontFamily="Lato"
-              fontSize="48px"
+              fontSize="4vmin"
             >
               {data.newsText1}
             </Typography>
@@ -152,7 +159,7 @@ function blogs() {
               position="relative"
               fontFamily="Lato"
               fontWeight="400"
-              fontSize="40px"
+              fontSize="3.5vmin"
               top="300px"
               left="40px"
             >
@@ -161,7 +168,7 @@ function blogs() {
               <Link
                 href="#"
                 fontWeight="600"
-                fontSize="40px"
+                fontSize="3.5vmin"
                 color="#d32f2f"
                 fontFamily="Lato"
               >

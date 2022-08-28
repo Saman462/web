@@ -15,26 +15,27 @@ import { makeStyles } from "@material-ui/core";
 import Logo from "../public/assets/Asset 1.png";
 import Image from "next/image";
 import assettag from "../public/assets/assettag.png";
-import useSWR from 'swr';
+import useSWR from "swr";
 
 const useStyles = makeStyles({
   bannerContainer: {
     position: "relative",
-    bottom: "890px",
+    bottom: "600px",
     left: "95px",
     padding: "30px",
+    display: "flex",
+    flexDirection: "column",
   },
   bannerContainer1: {
     position: "relative",
-    bottom: "890px",
+    bottom: "560px",
     right: "100px",
   },
   logoContainer: {
     width: "550px",
-    margin: "auto",
     position: "relative",
     right: "105px",
-    bottom: "90px",
+    margin: "40px 60px",
     padding: "30px",
   },
   logoMedia: {
@@ -51,7 +52,9 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 function footer() {
   const classes = useStyles();
-  const { data, error } = useSWR('/api/home/footerSection', (apiURL) => fetch(apiURL).then(res => res.json()))
+  const { data, error } = useSWR("/api/home/footerSection", (apiURL) =>
+    fetch(apiURL).then((res) => res.json())
+  );
   if (!data) return <div>loading...</div>;
   return (
     <Stack direction="row" spacing={2}>
@@ -160,15 +163,16 @@ function footer() {
           variant="h3"
           color="text.primary"
           fontWeight="500"
-          fontSize="35px"
+          fontSize="3vmin"
           style={{
             fontFamily: "Lato",
-
+            position: "relative",
+            marginTop: "100px",
             lineHeight: "45px",
             color: " #000000",
-            position: "absolute",
-            width: "807px",
-            height: "42px",
+
+            width: "150%",
+            height: "20vh",
             left: "2px",
           }}
         >
@@ -185,14 +189,14 @@ function footer() {
           fontWeight="600"
           fontSize="35px"
           style={{
-            position: "absolute",
-            bottom: "10px",
-            width: "707px",
-            height: "42px",
+            position: "relative",
+            top: "330px",
+            width: "150%",
+            height: "20vh",
 
             fontFamily: "Lato",
 
-            lineHeight: "45px",
+            lineHeight: "4vmin",
             color: " #000000",
           }}
         >
@@ -203,40 +207,40 @@ function footer() {
         <Box
           sx={{
             backgroundColor: "#C41E3A",
-            width: "20px",
-            height: "100px",
+            width: "3%",
+            height: "8vh",
             position: "relative",
-            bottom: "60px",
+            top: "40px",
             left: "160px",
           }}
         />
         <Box
           sx={{
             backgroundColor: "#C41E3A",
-            width: "20px",
-            height: "250px",
+            width: "3%",
+            height: "18vh",
             position: "relative",
-            top: "60px",
+            top: "160px",
             left: "160px",
           }}
         />
         <Box
           sx={{
             backgroundColor: "#C41E3A",
-            width: "20px",
-            height: "250px",
+            width: "3%",
+            height: "18vh",
             position: "relative",
-            top: "200px",
+            top: "290px",
             left: "160px",
           }}
         />
         <Box
           sx={{
             backgroundColor: "#C41E3A",
-            width: "20px",
-            height: "150px",
+            width: "3%",
+            height: "8vh",
             position: "relative",
-            top: "340px",
+            top: "400px",
             left: "160px",
           }}
         />
@@ -275,11 +279,6 @@ function footer() {
           </Grid>
           )} */}
 
-<Grid item xs={6}>
-            <Item>
-              <Image src={assettag} />
-            </Item>
-          </Grid>
           <Grid item xs={6}>
             <Item>
               <Image src={assettag} />
@@ -295,7 +294,11 @@ function footer() {
               <Image src={assettag} />
             </Item>
           </Grid>
-
+          <Grid item xs={6}>
+            <Item>
+              <Image src={assettag} />
+            </Item>
+          </Grid>
         </Grid>
       </Container>
     </Stack>

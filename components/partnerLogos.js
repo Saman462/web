@@ -5,27 +5,16 @@ import { Box, Typography, Stack } from "@mui/material";
 import Container from "@mui/material/Container";
 import { makeStyles } from "@material-ui/core";
 import useSWR from "swr";
+
 const useStyles = makeStyles({
   sbanner: {
+    height: "25vh",
+    width: "12vw",
     position: "relative",
-    right: "608px",
-    bottom: "32px",
-    height: "400px",
-    width: "350px",
-  },
-  sbanner1: {
-    position: "relative",
-    right: "1320px",
-    bottom: "32px",
-    height: "400px",
-    width: "350px",
-  },
-  sbanner2: {
-    position: "relative",
-    right: "1312px",
-    bottom: "32px",
-    height: "400px",
-    width: "350px",
+    border: "solid black 2px ",
+    right: "230px",
+    // margin: "30px auto",
+    top: "60px",
   },
 });
 function partnerLogos() {
@@ -36,13 +25,12 @@ function partnerLogos() {
   if (!data) return <div>loading...</div>;
   return (
     <Stack direction="row" spacing={2}>
-      {/* {data.partnerLogos.map((index,eachData) =>
-      
+      {data.partnerLogos.map((eachData) => (
         <Container className={classes.sbanner}>
           <Image src={eachData.partnerLogo} layout="fill" />
         </Container>
-      )} */}
-      <Container className={classes.sbanner}>
+      ))}
+      {/* <Container className={classes.sbanner}>
         <Image src={assettag} layout="fill" />
       </Container>
 
@@ -52,14 +40,15 @@ function partnerLogos() {
 
       <Container className={classes.sbanner2}>
         <Image src={assettag} layout="fill" />
-      </Container>
+      </Container> */}
 
       <Box
         sx={{
-          position: "absolute",
-          left: "1392px",
-          height: "20px",
-          width: "900px",
+          position: "relative",
+
+          top: "120px",
+          height: "20vh",
+          width: "30vw",
         }}
       >
         <Typography
@@ -67,7 +56,7 @@ function partnerLogos() {
           color="text.primary"
           fontWeight="650"
           font-family="Lato"
-          fontSize="40px"
+          fontSize="3.5vmin"
         >
           {data.partnerText}
         </Typography>

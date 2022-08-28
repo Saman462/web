@@ -16,6 +16,7 @@ const useStyles = makeStyles({
     padding: "20px",
     width: "40%",
     height: "60vh",
+    border: "solid black 4px",
   },
 
   card1: {
@@ -25,6 +26,7 @@ const useStyles = makeStyles({
     top: "60px",
     border: "none",
     boxShadow: "none",
+    left: "40px",
     margin: "20px auto",
     display: "flex",
   },
@@ -51,6 +53,7 @@ function banners() {
               padding: "10px",
               position: "relative",
               top: "78px",
+              left: "50px",
             }}
           ></Box>
 

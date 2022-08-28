@@ -41,7 +41,9 @@ export default function Home() {
         <Line />
       </div>
 
-      <div className={style.Blog}>{/* <Blogs /> */}</div>
+      <div className={style.Blog}>
+        <Blogs />
+      </div>
     </>
   );
 }

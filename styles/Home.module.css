@@ -13,12 +13,9 @@
 }
 .testimonials {
   position: relative;
-  top: 80px;
+  top: 200px;
 }
-.lines {
-  position: relative;
-  top: 620px;
-}
+
 .image1 {
   height: 4000px;
   width: 4000px;
@@ -31,6 +28,11 @@
 .Parrallax {
   position: absolute;
   top: 0;
+}
+.Blog {
+  position: relative;
+  margin-top: 400px;
+  margin-left: 70px;
 }
 .road {
   position: absolute;
@@ -49,15 +51,14 @@
   top: 330px;
   width: 1100px;
 }
-
+.lines {
+  position: relative;
+  top: 300px;
+}
 .sign {
   position: absolute;
   top: 660px;
   left: 10px;
   width: 190px;
   z-index: 1009;
-}
-.Blog {
-  position: relative;
-  top: 500px;
 }
