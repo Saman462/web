@@ -10,6 +10,7 @@ import {
   styled,
   Paper,
 } from "@mui/material";
+import style from "../styles/Home.module.css";
 import Container from "@mui/material/Container";
 import { makeStyles } from "@material-ui/core";
 import Logo from "../public/assets/Asset 1.png";
@@ -20,23 +21,21 @@ import useSWR from "swr";
 const useStyles = makeStyles({
   bannerContainer: {
     position: "relative",
-    bottom: "600px",
-    left: "95px",
     padding: "30px",
-    display: "flex",
-    flexDirection: "column",
+    marginLeft: "80px",
+    marginTop: "80px",
   },
-  bannerContainer1: {
-    position: "relative",
-    bottom: "560px",
-    right: "100px",
+  bannerContainer2: {
+    border: "black solid 4px",
+    width: "40%",
+    height: "70vh",
   },
+
   logoContainer: {
     width: "550px",
     position: "relative",
-    right: "105px",
-    margin: "40px 60px",
-    padding: "30px",
+    marginBottom: "80px",
+    right: "60px",
   },
   logoMedia: {
     height: "100%",
@@ -205,53 +204,61 @@ function footer() {
       </Container>
       <Container className={classes.bannerContainer}>
         <Box
+          style={{
+            marginLeft: "205px ",
+            marginTop: "70px",
+          }}
           sx={{
             backgroundColor: "#C41E3A",
             width: "3%",
             height: "8vh",
             position: "relative",
-            top: "40px",
-            left: "160px",
           }}
         />
         <Box
+          style={{
+            marginLeft: "205px ",
+            marginTop: "70px",
+          }}
           sx={{
             backgroundColor: "#C41E3A",
             width: "3%",
             height: "18vh",
             position: "relative",
-            top: "160px",
-            left: "160px",
           }}
         />
         <Box
+          style={{
+            marginLeft: "205px ",
+            marginTop: "70px",
+          }}
           sx={{
             backgroundColor: "#C41E3A",
             width: "3%",
             height: "18vh",
             position: "relative",
-            top: "290px",
-            left: "160px",
           }}
         />
         <Box
+          style={{
+            marginLeft: "205px ",
+            marginTop: "70px",
+          }}
           sx={{
             backgroundColor: "#C41E3A",
             width: "3%",
             height: "8vh",
             position: "relative",
-            top: "400px",
-            left: "160px",
           }}
         />
       </Container>
-      <Container className={classes.bannerContainer1}>
+      <Container className={style.bannerContainer1}>
         <Typography
           variant="body1"
           color="text.primary"
           fontWeight="700"
           fontSize="35px"
-          style={{ position: "absolute", top: "100px", left: "60px" }}
+          style={{ position: "absolute", top: "100px", left: "160px" }}
         >
           Leading the industry with our
           <br />
@@ -265,41 +272,12 @@ function footer() {
             Top Products
           </Link>
         </Typography>
-        <Grid
-          container
-          rowSpacing={11}
-          columnSpacing={{ xs: 1, sm: 2, md: 9 }}
-          style={{ position: "absolute", top: "300px" }}
-        >
-          {/* {data.footerLogos.map((eachData) =>
-          <Grid item xs={6}>
-            <Item>
-              <Image src={eachData.footerLogo} layout="fill" />
-            </Item>
-          </Grid>
-          )} */}
-
-          <Grid item xs={6}>
-            <Item>
-              <Image src={assettag} />
-            </Item>
-          </Grid>
-          <Grid item xs={6}>
-            <Item>
-              <Image src={assettag} />
-            </Item>
-          </Grid>
-          <Grid item xs={6}>
-            <Item>
-              <Image src={assettag} />
-            </Item>
-          </Grid>
-          <Grid item xs={6}>
-            <Item>
-              <Image src={assettag} />
-            </Item>
-          </Grid>
-        </Grid>
+        <Container className={style.container1}>
+          <Image width="250px" height="250px" src={assettag} />
+          <Image src={assettag} width="250px" height="250px" />
+          <Image src={assettag} width="250px" height="250px" />
+          <Image src={assettag} width="250px" height="250px" />
+        </Container>
       </Container>
     </Stack>
   );
