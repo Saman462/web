@@ -50,7 +50,18 @@ function blog(props) {
           >
             <Image src={assettag} objectFit="fill" layout="fill"></Image>
           </Container>
-
+          <Box
+            style={{
+              marginTop: "80px",
+              position: "relative",
+              left: "120px",
+            }}
+            sx={{
+              backgroundColor: "#C41E3A",
+              height: "120px",
+              padding: "8px",
+            }}
+          ></Box>
           <Card
             style={{ marginLeft: "130px", border: "none", boxShadow: "none" }}
             sx={{ width: "1000px", height: "805px" }}
@@ -93,12 +104,13 @@ function blog(props) {
                 variant="h3"
                 color="text.primary"
                 fontWeight="800"
-                fontSize="4.5vmin"
+                fontSize="5vmin"
                 fontFamily="Lato"
-                lineHeight="4vmin"
+                lineHeight="5vmin"
               >
                 Lörem ipsum mik tir. Dyvis negt och Dyvis negt och
               </Typography>
+              <br />
               <Typography
                 variant="body1"
                 color="text.primary"
