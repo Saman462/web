@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   bannerContainer: {
     position: "relative",
     padding: "230px",
-    margin: "80px 150px",
+    margin: "100px 150px",
     padding: "20px",
     width: "40%",
     height: "60vh",
@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     position: "relative",
     width: "40%",
 
-    top: "60px",
+    top: "100px",
     border: "none",
     boxShadow: "none",
     left: "40px",
@@ -52,7 +52,7 @@ function banners() {
               height: "160px",
               padding: "10px",
               position: "relative",
-              top: "78px",
+              top: "108px",
               left: "50px",
             }}
           ></Box>

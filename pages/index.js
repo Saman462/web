@@ -32,16 +32,21 @@ export default function Home() {
 
       <div>
         <Partners />
-      </div>
-
-      <div className={style.testimonials}>
+        <br />
+        <br />
+        <br />
         <Testimonials />
-      </div>
-      <div className={style.lines}>
+        <br />
+        <br />
+        <br />
         <Line />
+        <br />
+        <br />
+        <br /> <br />
+        <br />
+        <br />
       </div>
-
-      <div className={style.Blog}>
+      <div style={{ height: "810px" }}>
         <Blogs />
       </div>
     </>
