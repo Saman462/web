@@ -46,6 +46,7 @@
   margin-top: 200px;
   width: 750px;
   flex-wrap: wrap;
+  border: solid black 4px;
 }
 .image {
   width: 10vw;

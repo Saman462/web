@@ -272,11 +272,12 @@ function footer() {
             Top Products
           </Link>
         </Typography>
-        {data.footerLogos.map((eachData) => (
+
         <Container className={style.container1}>
-          <Image src={eachData.footerLogo} width="250px" height="250px" />
+          {data.footerLogos.map((eachData) => (
+            <Image src={eachData.footerLogo} width="250px" height="250px" />
+          ))}
         </Container>
-        ))}
       </Container>
     </Stack>
   );

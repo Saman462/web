@@ -8,13 +8,12 @@ import useSWR from "swr";
 
 const useStyles = makeStyles({
   sbanner: {
-    height: "25vh",
-    width: "12vw",
+    width: "50vw",
     position: "relative",
-    border: "solid black 2px ",
-    right: "230px",
-    // margin: "30px auto",
-    top: "60px",
+    // border: "solid black 2px ",
+    display: "flex",
+    justifyContent: "space-evenly",
+    margin: "30px 30px",
   },
 });
 function partnerLogos() {
@@ -25,11 +24,12 @@ function partnerLogos() {
   if (!data) return <div>loading...</div>;
   return (
     <Stack direction="row" spacing={2}>
-      {data.partnerLogos.map((eachData) => (
-        <Container className={classes.sbanner}>
-          <Image src={eachData.partnerLogo} layout="fill" />
-        </Container>
-      ))}
+      <Container className={classes.sbanner}>
+        {data.partnerLogos.map((eachData) => (
+          <Image height="250px" width="250px " src={eachData.partnerLogo} />
+        ))}
+      </Container>
+
       {/* <Container className={classes.sbanner}>
         <Image src={assettag} layout="fill" />
       </Container>
@@ -43,10 +43,12 @@ function partnerLogos() {
       </Container> */}
 
       <Box
+        style={{
+          margin: "30px 180px",
+        }}
         sx={{
           position: "relative",
-
-          top: "120px",
+          top: "30px",
           height: "20vh",
           width: "30vw",
         }}
