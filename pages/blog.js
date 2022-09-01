@@ -13,10 +13,11 @@ import {
 } from "@mui/material";
 
 import style from "../styles/Home.module.css";
+import BlogCards from "../components/blogCards"
 function blog(props) {
   return (
     <div>
-      <Typography
+      {/* <Typography
         gutterBottom
         variant="h1"
         component="div"
@@ -146,9 +147,8 @@ function blog(props) {
             </CardContent>
           </Card>
         </Stack>
-
-        
-      </div>
+      </div> */}
+      <BlogCards/>
     </div>
   );
 }

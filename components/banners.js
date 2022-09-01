@@ -40,7 +40,8 @@ function banners() {
 
   return (
     <>
-      {data.map((data) => (
+      {data.map((data,index) => (
+
         <Stack direction="row" spacing={2}>
           <Container className={classes.bannerContainer}>
             <Image src={data.productImage} layout="fill" objectFit="fill" />
