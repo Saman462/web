@@ -13,25 +13,58 @@ import {
 } from "@mui/material";
 
 import style from "../styles/Home.module.css";
-import BlogCards from "../components/blogCards"
+import BlogCards from "../components/blogCards";
 function blog(props) {
-
-  const sliderClick = (slider)=>{
+  const sliderClick = (slider) => {
     alert("hello world");
-  }
+  };
 
   const slides = [
-    {image:"https://picsum.photos/200/300",title:"This is a title",description:"This is a description",clickEvent:sliderClick},
-    {image:"https://picsum.photos/600/500",title:"This is a second title",description:"This is a second description",clickEvent:sliderClick},
-    {image:"https://picsum.photos/700/600",title:"This is a third title",description:"This is a third description",clickEvent:sliderClick},
-    {image:"https://picsum.photos/500/400",title:"This is a fourth title",description:"This is a fourth description",clickEvent:sliderClick},
-    {image:"https://picsum.photos/200/300",title:"This is a fifth title",description:"This is a fifth description",clickEvent:sliderClick},
-    {image:"https://picsum.photos/800/700",title:"This is a sixth title",description:"This is a sixth description",clickEvent:sliderClick},
-    {image:"https://picsum.photos/300/400",title:"This is a seventh title",description:"This is a seventh description",clickEvent:sliderClick},
-  ]
+    {
+      image: "https://picsum.photos/200/300",
+      title: "This is a title",
+      description: "This is a description",
+      clickEvent: sliderClick,
+    },
+    {
+      image: "https://picsum.photos/600/500",
+      title: "This is a second title",
+      description: "This is a second description",
+      clickEvent: sliderClick,
+    },
+    {
+      image: "https://picsum.photos/700/600",
+      title: "This is a third title",
+      description: "This is a third description",
+      clickEvent: sliderClick,
+    },
+    {
+      image: "https://picsum.photos/500/400",
+      title: "This is a fourth title",
+      description: "This is a fourth description",
+      clickEvent: sliderClick,
+    },
+    {
+      image: "https://picsum.photos/200/300",
+      title: "This is a fifth title",
+      description: "This is a fifth description",
+      clickEvent: sliderClick,
+    },
+    {
+      image: "https://picsum.photos/800/700",
+      title: "This is a sixth title",
+      description: "This is a sixth description",
+      clickEvent: sliderClick,
+    },
+    {
+      image: "https://picsum.photos/300/400",
+      title: "This is a seventh title",
+      description: "This is a seventh description",
+      clickEvent: sliderClick,
+    },
+  ];
   return (
     <div>
-      
       <Typography
         gutterBottom
         variant="h1"
@@ -143,8 +176,6 @@ function blog(props) {
                 euron. Gigt malogi polyrtad, fast sov. Geoligen ivis för doligen
                 åsam: detilig. Prerade bäd salogi tetrahuk vabel. Euktiga
                 bivatir med falig. Doliga karar. Dost fan tertad halig mikroväs.
-                Sude senas tira. Doliga karar. Dost fan tertad halig mikroväs.
-                Sude senas tira.
               </Typography>
               <br />
               <Typography align="right">
@@ -163,7 +194,7 @@ function blog(props) {
           </Card>
         </Stack>
       </div>
-      <BlogCards slides={slides}/>
+      <BlogCards slides={slides} />
     </div>
   );
 }

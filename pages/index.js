@@ -39,6 +39,8 @@ export default function Home() {
         <br />
         <br />
         <br />
+        <br />
+        <br />
         <Line />
         <br />
         <br />
@@ -46,9 +48,17 @@ export default function Home() {
         <br />
         <br />
       </div>
-      <div style={{ height: "810px" }}>
+      <div
+        style={{
+          height: "870px",
+        }}
+      >
         <Blogs />
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }

@@ -43,10 +43,10 @@
   align-items: center;
   justify-content: space-evenly;
   gap: 60px 20px;
-  margin-top: 200px;
+  margin-top: 40px;
   width: 750px;
   flex-wrap: wrap;
-  border: solid black 4px;
+  /* border: solid black 4px; */
 }
 .image {
   width: 10vw;

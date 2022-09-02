@@ -17,25 +17,30 @@ import Logo from "../public/assets/Asset 1.png";
 import Image from "next/image";
 import assettag from "../public/assets/assettag.png";
 import useSWR from "swr";
+import { WrapText } from "@material-ui/icons";
 
 const useStyles = makeStyles({
   bannerContainer: {
+    // border: "solid black 4px",
     position: "relative",
-    padding: "30px",
-    marginLeft: "80px",
-    marginTop: "80px",
+    marginLeft: "40px",
+    display: "flex",
+    flexWrap: "wrap",
+    flexDirection: "column",
+    width: "780px",
   },
-  bannerContainer2: {
-    border: "black solid 4px",
-    width: "40%",
-    height: "70vh",
+  bannerContainer1: {
+    // border: "solid black 4px",
+    width: "30px",
+    // position: "relative",
+    // right: "120px",
   },
 
   logoContainer: {
     width: "550px",
     position: "relative",
     marginBottom: "80px",
-    right: "60px",
+    right: "160px",
   },
   logoMedia: {
     height: "100%",
@@ -56,230 +61,221 @@ function footer() {
   );
   if (!data) return <div>loading...</div>;
   return (
-    <Stack direction="row" spacing={2}>
-      <Container className={classes.bannerContainer}>
-        <Container className={classes.logoContainer}>
-          <Image
-            src={Logo}
-            className={classes.logoMedia}
-            style={{ cursor: "pointer" }}
+    <div
+      style={{
+        // border: "solid black 4px",
+        display: "flex",
+        flexDirection: " row",
+        flexWrap: "wrap",
+        justifyContent: "center",
+      }}
+    >
+      <Stack direction="row" spacing={2}>
+        <Container className={classes.bannerContainer}>
+          <Container className={classes.logoContainer}>
+            <Image
+              src={Logo}
+              className={classes.logoMedia}
+              style={{ cursor: "pointer" }}
+            />
+          </Container>
+
+          <Typography
+            gutterBottom
+            variant="h3"
+            component="div"
+            fontWeight="800"
+            fontFamily="Open Sans "
+            fontSize="4.5vmin"
+            color=" #555555
+           "
+            style={{
+              cursor: "pointer",
+              textDecoration: "underline",
+              textDecorationColor: " #BF0000",
+            }}
+          >
+            HOME
+          </Typography>
+          <br />
+          <Typography
+            gutterBottom
+            variant="h3"
+            component="div"
+            fontWeight="800"
+            fontFamily="Open Sans "
+            fontSize="4.5vmin"
+            color=" #555555
+          "
+            style={{
+              cursor: "pointer",
+              textDecoration: "underline",
+              textDecorationColor: " #BF0000",
+            }}
+          >
+            BLOG
+          </Typography>
+          <br />
+          <Typography
+            gutterBottom
+            variant="h3"
+            component="div"
+            fontWeight="800"
+            fontFamily="Open Sans "
+            fontSize="4.5vmin"
+            color=" #555555
+          "
+            style={{
+              cursor: "pointer",
+              textDecoration: "underline",
+              textDecorationColor: " #BF0000",
+            }}
+          >
+            PRODUCTS
+          </Typography>
+          <br />
+          <Typography
+            gutterBottom
+            variant="h3"
+            component="div"
+            fontWeight="800"
+            fontFamily="Open Sans "
+            fontSize="4.5vmin"
+            color=" #555555
+          "
+            style={{
+              cursor: "pointer",
+              textDecoration: "underline",
+              textDecorationColor: " #BF0000",
+            }}
+          >
+            ABOUT
+          </Typography>
+          <br />
+          <Typography
+            gutterBottom
+            variant="h3"
+            component="div"
+            fontWeight="800"
+            fontFamily="Open Sans "
+            fontSize="4.5vmin"
+            color=" #555555
+          "
+            style={{
+              cursor: "pointer",
+              textDecoration: "underline",
+              textDecorationColor: " #BF0000",
+            }}
+          >
+            CONTACT
+          </Typography>
+        </Container>
+
+        <Container className={classes.bannerContainer}>
+          <Typography
+            variant="h3"
+            color="text.primary"
+            fontWeight="500"
+            fontSize="3vmin"
+            style={{
+              fontFamily: "Lato",
+              position: "relative",
+              marginTop: "100px",
+              lineHeight: "45px",
+              color: " #000000",
+              width: "700px",
+            }}
+          >
+            {data.footerText1}
+          </Typography>
+
+          <Typography
+            variant="body1"
+            color="text.primary"
+            fontWeight="600"
+            fontSize="3.2vmin"
+            style={{
+              position: "relative",
+              top: "500px",
+              fontFamily: "Lato",
+
+              lineHeight: "3vmin",
+              color: " #000000",
+            }}
+          >
+            {data.footerText2}
+          </Typography>
+        </Container>
+        <Container className={classes.bannerContainer1}>
+          <Box
+            sx={{
+              backgroundColor: "#C41E3A",
+              width: "13px",
+              height: "8vh",
+              position: "relative",
+            }}
+          />
+          <Box
+            style={{
+              marginTop: "80px",
+            }}
+            sx={{
+              backgroundColor: "#C41E3A",
+              width: "13px",
+              height: "18vh",
+              position: "relative",
+            }}
+          />
+          <Box
+            style={{
+              marginTop: "80px",
+            }}
+            sx={{
+              backgroundColor: "#C41E3A",
+              width: "13px",
+              height: "18vh",
+              position: "relative",
+            }}
+          />
+          <Box
+            style={{
+              marginTop: "70px",
+            }}
+            sx={{
+              backgroundColor: "#C41E3A",
+              width: "13px",
+              height: "8vh",
+              position: "relative",
+            }}
           />
         </Container>
-
-        <Typography
-          gutterBottom
-          variant="h3"
-          component="div"
-          fontWeight="800"
-          fontFamily="Open Sans "
-          fontSize="55px"
-          color=" #555555
-           "
-          style={{
-            cursor: "pointer",
-            textDecoration: "underline",
-            textDecorationColor: " #BF0000",
-          }}
-        >
-          HOME
-        </Typography>
-        <br />
-        <Typography
-          gutterBottom
-          variant="h3"
-          component="div"
-          fontWeight="800"
-          fontFamily="Open Sans "
-          fontSize="55px"
-          color=" #555555
-          "
-          style={{
-            cursor: "pointer",
-            textDecoration: "underline",
-            textDecorationColor: " #BF0000",
-          }}
-        >
-          BLOG
-        </Typography>
-        <br />
-        <Typography
-          gutterBottom
-          variant="h3"
-          component="div"
-          fontWeight="800"
-          fontFamily="Open Sans "
-          fontSize="55px"
-          color=" #555555
-          "
-          style={{
-            cursor: "pointer",
-            textDecoration: "underline",
-            textDecorationColor: " #BF0000",
-          }}
-        >
-          PRODUCTS
-        </Typography>
-        <br />
-        <Typography
-          gutterBottom
-          variant="h3"
-          component="div"
-          fontWeight="800"
-          fontFamily="Open Sans "
-          fontSize="55px"
-          color=" #555555
-          "
-          style={{
-            cursor: "pointer",
-            textDecoration: "underline",
-            textDecorationColor: " #BF0000",
-          }}
-        >
-          ABOUT
-        </Typography>
-        <br />
-        <Typography
-          gutterBottom
-          variant="h3"
-          component="div"
-          fontWeight="800"
-          fontFamily="Open Sans "
-          fontSize="55px"
-          color=" #555555
-          "
-          style={{
-            cursor: "pointer",
-            textDecoration: "underline",
-            textDecorationColor: " #BF0000",
-          }}
-        >
-          CONTACT
-        </Typography>
-      </Container>
-
-      <Container className={classes.bannerContainer}>
-        <Typography
-          variant="h3"
-          color="text.primary"
-          fontWeight="500"
-          fontSize="3vmin"
-          style={{
-            fontFamily: "Lato",
-            position: "relative",
-            marginTop: "100px",
-            lineHeight: "45px",
-            color: " #000000",
-
-            width: "150%",
-            height: "20vh",
-            left: "2px",
-          }}
-        >
-          {data.footerText1}
-        </Typography>
-        <br />
-        <br />
-        <br />
-        <br />
-
-        <Typography
-          variant="body1"
-          color="text.primary"
-          fontWeight="600"
-          fontSize="35px"
-          style={{
-            position: "relative",
-            top: "330px",
-            width: "150%",
-            height: "20vh",
-
-            fontFamily: "Lato",
-
-            lineHeight: "4vmin",
-            color: " #000000",
-          }}
-        >
-          {data.footerText2}
-        </Typography>
-      </Container>
-      <Container className={classes.bannerContainer}>
-        <Box
-          style={{
-            marginLeft: "205px ",
-            marginTop: "70px",
-          }}
-          sx={{
-            backgroundColor: "#C41E3A",
-            width: "3%",
-            height: "8vh",
-            position: "relative",
-          }}
-        />
-        <Box
-          style={{
-            marginLeft: "205px ",
-            marginTop: "70px",
-          }}
-          sx={{
-            backgroundColor: "#C41E3A",
-            width: "3%",
-            height: "18vh",
-            position: "relative",
-          }}
-        />
-        <Box
-          style={{
-            marginLeft: "205px ",
-            marginTop: "70px",
-          }}
-          sx={{
-            backgroundColor: "#C41E3A",
-            width: "3%",
-            height: "18vh",
-            position: "relative",
-          }}
-        />
-        <Box
-          style={{
-            marginLeft: "205px ",
-            marginTop: "70px",
-          }}
-          sx={{
-            backgroundColor: "#C41E3A",
-            width: "3%",
-            height: "8vh",
-            position: "relative",
-          }}
-        />
-      </Container>
-      <Container className={style.bannerContainer1}>
-        <Typography
-          variant="body1"
-          color="text.primary"
-          fontWeight="700"
-          fontSize="35px"
-          style={{ position: "absolute", top: "100px", left: "160px" }}
-        >
-          Leading the industry with our
+        <Container className={classes.bannerContainer}>
           <br />
-          <Link
-            href="#"
-            fontWeight="600"
-            fontSize="35px"
-            color="#d32f2f"
-            style={{ position: "absolute", left: "150px" }}
-          >
-            Top Products
-          </Link>
-        </Typography>
+          <br />
+          <br />
+          <br />
 
-        <Container className={style.container1}>
-          {data.footerLogos.map((eachData) => (
-            <Image src={eachData.footerLogo} width="250px" height="250px" />
-          ))}
+          <Typography
+            variant="body1"
+            color="text.primary"
+            fontWeight="700"
+            fontSize="35px"
+            align="center"
+          >
+            Leading the industry with our
+            <br />
+            <Link href="#" fontWeight="600" fontSize="35px" color="#d32f2f">
+              Top Products
+            </Link>
+          </Typography>
+          <Container className={style.container1}>
+            {data.footerLogos.map((eachData) => (
+              <Image src={eachData.footerLogo} width="250px" height="250px" />
+            ))}
+          </Container>
         </Container>
-      </Container>
-    </Stack>
+      </Stack>
+    </div>
   );
 }
 

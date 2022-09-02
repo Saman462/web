@@ -5,8 +5,8 @@ function lines() {
       <Box
         sx={{
           backgroundColor: "#C41E3A",
-          width: "150px",
-          height: "24px",
+          width: "8vw",
+          height: "2vh",
 
           position: "relative",
         }}
@@ -14,8 +14,8 @@ function lines() {
       <Box
         sx={{
           backgroundColor: "#C41E3A",
-          width: "270px",
-          height: "24px",
+          width: "15vw",
+          height: "2vh",
 
           position: "relative",
         }}
@@ -23,32 +23,32 @@ function lines() {
       <Box
         sx={{
           backgroundColor: "#C41E3A",
-          width: "270px",
-          height: "24px",
+          width: "15vw",
+          height: "2vh",
           position: "relative",
         }}
       ></Box>
       <Box
         sx={{
           backgroundColor: "#C41E3A",
-          width: "270px",
-          height: "24px",
+          width: "15vw",
+          height: "2vh",
           position: "relative",
         }}
       ></Box>
       <Box
         sx={{
           backgroundColor: "#C41E3A",
-          width: "270px",
-          height: "24px",
+          width: "15vw",
+          height: "2vh",
           position: "relative",
         }}
       ></Box>
       <Box
         sx={{
           backgroundColor: "#C41E3A",
-          width: "270px",
-          height: "24px",
+          width: "15vw",
+          height: "2vh",
 
           position: "relative",
         }}
@@ -56,8 +56,8 @@ function lines() {
       <Box
         sx={{
           backgroundColor: "#C41E3A",
-          width: "270px",
-          height: "24px",
+          width: "15vw",
+          height: "2vh",
 
           position: "relative",
         }}
@@ -65,8 +65,8 @@ function lines() {
       <Box
         sx={{
           backgroundColor: "#C41E3A",
-          width: "187px",
-          height: "24px",
+          width: "8vw",
+          height: "2vh",
 
           position: "relative",
         }}

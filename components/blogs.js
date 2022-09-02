@@ -107,7 +107,7 @@ function blogs() {
           }}
           sx={{
             width: "100%",
-            height: "70vh",
+            height: "66vh",
             border: "none",
             boxShadow: "none",
           }}
