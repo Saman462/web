@@ -13,9 +13,9 @@ const ReactCardSlider = (props) => {
   };
 
   return (
-    <div style={{ margin: "120px 120px" }} id="main-slider-container">
+    <div style={{ margin: "120px 30px" }} id="main-slider-container">
       <MdChevronLeft
-        size={40}
+        size={90}
         className="slider-icon left"
         onClick={slideLeft}
       />
@@ -41,7 +41,7 @@ const ReactCardSlider = (props) => {
         })}
       </div>
       <MdChevronRight
-        size={40}
+        size={90}
         className="slider-icon right"
         onClick={slideRight}
       />

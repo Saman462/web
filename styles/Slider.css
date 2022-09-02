@@ -1,6 +1,6 @@
 #main-slider-container {
-  width: 90%;
-  height: 485px;
+  width: 98%;
+  height: 685px;
 }
 
 #slider {
@@ -25,17 +25,19 @@
 .slider-card-title,
 .slider-card-description {
   margin: 5px 0px 5px 10px;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .slider-card-title {
   font-weight: 700;
   margin-top: 10px;
-  font-size: 25px;
+  font-size: 3.2vmin;
 }
 
 .slider-card-description {
   opacity: 0.4;
-  font-size: 20px;
+  font-size: 2.5vmin;
 }
 
 .slider-card-image {
@@ -48,11 +50,12 @@
 
 .slider-icon.left,
 .slider-icon.right {
-  background: white;
+  /* background: white; */
   /*   border-radius: 100%; */
-  position: absolute;
+  position: relative;
+
   opacity: 0.5;
-  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%);
+  /* box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%); */
   cursor: pointer;
 }
 
@@ -70,8 +73,8 @@
 }
 
 .slider-card {
-  width: 450px;
-  height: 480px;
+  width: 550px;
+  height: 580px;
   background: white;
   /* border-radius: 10px; */
   display: inline-block;
