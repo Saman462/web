@@ -11,7 +11,7 @@ import style from "../styles/Home.module.css";
 const useStyles = makeStyles({
   bannerContainer: {
     position: "relative",
-    padding: "230px",
+
     margin: "100px 150px",
     padding: "20px",
     width: "40%",
@@ -20,15 +20,11 @@ const useStyles = makeStyles({
   },
 
   card1: {
-    position: "relative",
     width: "40%",
-
-    top: "100px",
+    padding: "90px",
+    margin: "90px 120px",
     border: "none",
     boxShadow: "none",
-    left: "40px",
-    margin: "20px auto",
-    display: "flex",
   },
 });
 function banners() {
@@ -40,9 +36,16 @@ function banners() {
 
   return (
     <>
-      {data.map((data,index) => (
-
-        <Stack direction="row" spacing={2}>
+      {data.map((data, index) => (
+        <Stack
+          direction="row"
+          spacing={2}
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+          }}
+        >
           <Container className={classes.bannerContainer}>
             <Image src={data.productImage} layout="fill" objectFit="fill" />
           </Container>
@@ -53,15 +56,12 @@ function banners() {
               height: "160px",
               padding: "10px",
               position: "relative",
-              top: "108px",
-              left: "50px",
+              top: "110px",
+              left: "100px",
             }}
           ></Box>
 
-          <Card
-            className={classes.card1}
-            sx={{ width: "1000px", height: "800px" }}
-          >
+          <Card className={classes.card1} sx={{ height: "700px" }}>
             <CardContent>
               <Typography
                 gutterBottom

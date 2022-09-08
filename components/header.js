@@ -1,9 +1,5 @@
 import Image from "next/image";
-import {
-  Box,
-  IconButton,
-  Typography,
-} from "@mui/material";
+import { Box, IconButton, Typography } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -38,7 +34,6 @@ const styles = {
   },
 };
 
-
 const header = () => {
   const classes = useStyles();
   const toggleDrawer = (anchor, open) => (event) => {
@@ -51,7 +46,7 @@ const header = () => {
 
     setState({ ...state, [anchor]: open });
   };
-  console.log('hello world')
+  console.log("hello world");
   return (
     <AppBar position="static" style={styles.appBar}>
       <Container maxWidth="xl">
@@ -155,6 +150,6 @@ const header = () => {
         </Toolbar>
       </Container>
     </AppBar>
-  )
-}
-export default header
+  );
+};
+export default header;

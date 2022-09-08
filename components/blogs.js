@@ -3,7 +3,8 @@ import { Box, Card, Link, CardContent, Typography, Stack } from "@mui/material";
 import Container from "@mui/material/Container";
 import { makeStyles } from "@material-ui/core";
 import useSWR from "swr";
-
+import assettag from "../public/assets/assettag.png";
+import Image from "next/image";
 const useStyles = makeStyles({
   bannerContainer: {
     position: "relative",
@@ -29,22 +30,21 @@ function blogs() {
             height: "70vh",
             border: "none",
             boxShadow: "none",
+            marginLeft: "50px",
+            backgroundColor: "#C0C0C0",
           }}
         >
           <CardContent>
-            <Box
-              sx={{
-                width: "100%",
-                height: "56vh",
-                backgroundColor: "#DCDCDC",
-              }}
-            ></Box>
+            <Image src={assettag} height={640} width={900}></Image>
+
             {/* {data.map((eachData) => */}
+
             <Typography
               variant="body1"
               color="text.primary"
               backgroundColor="#C0C0C0"
               fontWeight="600"
+              padding="30px"
               fontSize="3.6vmin"
               fontFamily="Lato"
               height="20vh"
