@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     padding: "20px",
     width: "40%",
     height: "60vh",
-    border: "solid black 4px",
+    // border: "solid black 4px",
   },
 
   card1: {

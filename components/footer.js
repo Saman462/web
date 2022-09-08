@@ -87,15 +87,69 @@ function footer() {
             fontWeight="800"
             fontFamily="Open Sans "
             fontSize="4.5vmin"
-            color=" #555555
-           "
             style={{
               cursor: "pointer",
-              textDecoration: "underline",
-              textDecorationColor: " #BF0000",
             }}
           >
-            HOME
+            <Link
+              href="#"
+              color="#555555
+          "
+              style={{
+                textDecoration: "underline",
+                textDecorationColor: " #BF0000",
+              }}
+            >
+              HOME
+            </Link>
+          </Typography>
+          <br />
+          <Typography
+            gutterBottom
+            variant="h3"
+            component="div"
+            fontWeight="800"
+            fontFamily="Open Sans "
+            fontSize="4.5vmin"
+            style={{
+              cursor: "pointer",
+            }}
+          >
+            <Link
+              href="#"
+              color="#555555
+          "
+              style={{
+                textDecoration: "underline",
+                textDecorationColor: " #BF0000",
+              }}
+            >
+              BLOG
+            </Link>
+          </Typography>
+          <br />
+          <Typography
+            gutterBottom
+            variant="h3"
+            component="div"
+            fontWeight="800"
+            fontFamily="Open Sans "
+            fontSize="4.5vmin"
+            style={{
+              cursor: "pointer",
+            }}
+          >
+            <Link
+              href="#"
+              color="#555555
+          "
+              style={{
+                textDecoration: "underline",
+                textDecorationColor: " #BF0000",
+              }}
+            >
+              PRODUCTS
+            </Link>
           </Typography>
           <br />
           <Typography
@@ -109,11 +163,19 @@ function footer() {
           "
             style={{
               cursor: "pointer",
-              textDecoration: "underline",
-              textDecorationColor: " #BF0000",
             }}
           >
-            BLOG
+            <Link
+              href="#"
+              color="#555555
+          "
+              style={{
+                textDecoration: "underline",
+                textDecorationColor: " #BF0000",
+              }}
+            >
+              ABOUT
+            </Link>
           </Typography>
           <br />
           <Typography
@@ -123,51 +185,21 @@ function footer() {
             fontWeight="800"
             fontFamily="Open Sans "
             fontSize="4.5vmin"
-            color=" #555555
-          "
             style={{
               cursor: "pointer",
-              textDecoration: "underline",
-              textDecorationColor: " #BF0000",
             }}
           >
-            PRODUCTS
-          </Typography>
-          <br />
-          <Typography
-            gutterBottom
-            variant="h3"
-            component="div"
-            fontWeight="800"
-            fontFamily="Open Sans "
-            fontSize="4.5vmin"
-            color=" #555555
+            <Link
+              href="#"
+              color="#555555
           "
-            style={{
-              cursor: "pointer",
-              textDecoration: "underline",
-              textDecorationColor: " #BF0000",
-            }}
-          >
-            ABOUT
-          </Typography>
-          <br />
-          <Typography
-            gutterBottom
-            variant="h3"
-            component="div"
-            fontWeight="800"
-            fontFamily="Open Sans "
-            fontSize="4.5vmin"
-            color=" #555555
-          "
-            style={{
-              cursor: "pointer",
-              textDecoration: "underline",
-              textDecorationColor: " #BF0000",
-            }}
-          >
-            CONTACT
+              style={{
+                textDecoration: "underline",
+                textDecorationColor: " #BF0000",
+              }}
+            >
+              CONTACT
+            </Link>
           </Typography>
         </Container>
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Box, IconButton, Typography } from "@mui/material";
+import { Box, IconButton, Typography, Link } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -10,7 +10,7 @@ import React from "react";
 
 const useStyles = makeStyles({
   logoContainer: {
-    width: 230,
+    width: 330,
     margin: "auto",
   },
   logoMedia: {
@@ -101,44 +101,34 @@ const header = () => {
               marginLeft: "400px",
             }}
           >
-            <Typography
-              variant="body1"
-              color="initial"
-              style={styles.rightLinks}
-            >
-              HOME
+            <Typography variant="body1" color="initial">
+              <Link href="#" style={styles.rightLinks}>
+                HOME
+              </Link>
             </Typography>
 
-            <Typography
-              variant="body1"
-              color="initial"
-              style={styles.rightLinks}
-            >
-              BLOG
+            <Typography variant="body1" color="initial">
+              <Link href="#" style={styles.rightLinks}>
+                BLOG
+              </Link>
             </Typography>
 
-            <Typography
-              variant="body1"
-              color="initial"
-              style={styles.rightLinks}
-            >
-              PRODUCTS
+            <Typography variant="body1" color="initial">
+              <Link href="#" style={styles.rightLinks}>
+                PRODUCTS
+              </Link>
             </Typography>
 
-            <Typography
-              variant="body1"
-              color="initial"
-              style={styles.rightLinks}
-            >
-              ABOUT
+            <Typography variant="body1" color="initial">
+              <Link href="#" style={styles.rightLinks}>
+                ABOUT
+              </Link>
             </Typography>
 
-            <Typography
-              variant="body1"
-              color="initial"
-              style={styles.rightLinks}
-            >
-              CONTACT
+            <Typography variant="body1" color="initial">
+              <Link href="#" style={styles.rightLinks}>
+                CONTACT
+              </Link>
             </Typography>
             {/* 
               <Box style={{backgroundColor: '#D42626',height: '30px'}}>
