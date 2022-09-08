@@ -29,7 +29,7 @@ const styles = {
     cursor: "pointer",
     marginRight: "30px",
     fontWeight: "600",
-    fontSize: "15px",
+    fontSize: "2vmin",
     lineHeight: "22px",
   },
 };
