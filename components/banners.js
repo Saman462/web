@@ -27,7 +27,7 @@ const useStyles = makeStyles({
     boxShadow: "none",
   },
 });
-function banners() {
+function Banners() {
   const classes = useStyles();
   const { data, error } = useSWR("/api/home/products", (apiURL) =>
     fetch(apiURL).then((res) => res.json())
@@ -36,8 +36,9 @@ function banners() {
 
   return (
     <>
-      {data.map((data, index) => (
+      {data.map((eachData, index) => (
         <Stack
+          key={eachData.id}
           direction="row"
           spacing={2}
           style={{
@@ -47,7 +48,7 @@ function banners() {
           }}
         >
           <Container className={classes.bannerContainer}>
-            <Image src={data.productImage} layout="fill" objectFit="fill" />
+            <Image src={eachData.productImage} layout="fill" objectFit="fill" />
           </Container>
 
           <Box
@@ -71,7 +72,7 @@ function banners() {
                 fontFamily="Lato"
                 fontSize="4vmin"
               >
-                {data.productName}
+                {eachData.productName}
               </Typography>
               <br />
               <Typography
@@ -82,7 +83,7 @@ function banners() {
                 fontFamily="Lato"
                 lineHeight="3vmin"
               >
-                {data.productDescription}
+                {eachData.productDescription}
               </Typography>
               <br />
               <br />
@@ -94,7 +95,7 @@ function banners() {
                 fontFamily="Lato"
                 lineHeight="3vmin"
               >
-                {data.productLink}
+                {eachData.productLink}
               </Link>
             </CardContent>
           </Card>
@@ -104,4 +105,4 @@ function banners() {
   );
 }
 
-export default banners;
+export default Banners;

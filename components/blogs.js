@@ -11,7 +11,7 @@ const useStyles = makeStyles({
   },
 });
 
-function blogs() {
+function Blogs() {
   const classes = useStyles();
   const { data, error } = useSWR("/api/home/news", (apiURL) =>
     fetch(apiURL).then((res) => res.json())
@@ -113,7 +113,7 @@ function blogs() {
           }}
         >
           {data.newsHeadlines.map((eachData) => (
-            <CardContent>
+            <CardContent key={eachData.id}>
               <Typography
                 variant="body1"
                 color="text.primary"
@@ -182,4 +182,4 @@ function blogs() {
   );
 }
 
-export default blogs;
+export default Blogs;

@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     margin: "30px 30px",
   },
 });
-function partnerLogos() {
+function PartnerLogos() {
   const classes = useStyles();
   const { data, error } = useSWR("/api/home/partners", (apiURL) =>
     fetch(apiURL).then((res) => res.json())
@@ -26,7 +26,7 @@ function partnerLogos() {
     <Stack direction="row" spacing={2}>
       <Container className={classes.sbanner}>
         {data.partnerLogos.map((eachData) => (
-          <Image height="250px" width="250px " src={eachData.partnerLogo} />
+          <Image height="250px" width="250px " src={eachData.partnerLogo} key={eachData.id} />
         ))}
       </Container>
 
@@ -67,4 +67,4 @@ function partnerLogos() {
   );
 }
 
-export default partnerLogos;
+export default PartnerLogos;

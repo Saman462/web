@@ -9,15 +9,19 @@ export default function handler(req, res) {
             newsText2: 'Lorem ispum vestibulum.',
             newsHeadlines: [
                 {
+                    id: 1,
                     newsHeadline: 'Mauris eget varius sapien. Sed facilisis congue porta. Nulla laoreet laoreet nec.'
                 },
                 {
+                    id: 2,
                     newsHeadline: 'Mauris eget varius sapien. Sed facilisis congue porta. Nulla laoreet laoreet nec.'
                 },
                 {
+                    id: 3,
                     newsHeadline: 'Mauris eget varius sapien. Sed facilisis congue porta. Nulla laoreet laoreet nec.'
                 },
                 {
+                    id: 4,
                     newsHeadline: 'Mauris eget varius sapien. Sed facilisis congue porta. Nulla laoreet laoreet nec.'
                 },
             ]

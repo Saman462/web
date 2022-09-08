@@ -54,7 +54,7 @@ const Item = styled(Paper)(({ theme }) => ({
   border: "none",
   boxShadow: "none",
 }));
-function footer() {
+function Footer() {
   const classes = useStyles();
   const { data, error } = useSWR("/api/home/footerSection", (apiURL) =>
     fetch(apiURL).then((res) => res.json())
@@ -302,7 +302,7 @@ function footer() {
           </Typography>
           <Container className={style.container1}>
             {data.footerLogos.map((eachData) => (
-              <Image src={eachData.footerLogo} width="250px" height="250px" />
+              <Image src={eachData.footerLogo} key={eachData.id} width="250px" height="250px" />
             ))}
           </Container>
         </Container>
@@ -311,4 +311,4 @@ function footer() {
   );
 }
 
-export default footer;
+export default Footer;

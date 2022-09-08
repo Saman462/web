@@ -9,15 +9,19 @@ export default function handler(req, res) {
       "Mauris eget varius sapien. Sed facilisis congue porta. Nulla laoreet orci nulla, in dictum ligula laoreet nec.",
     footerLogos: [
       {
+        id: 1,
         footerLogo: assettag.src,
       },
       {
+        id: 2,
         footerLogo: assettag.src,
       },
       {
+        id: 3,
         footerLogo: assettag.src,
       },
       {
+        id: 4,
         footerLogo: assettag.src,
       },
     ],

@@ -34,7 +34,7 @@ const styles = {
   },
 };
 
-const header = () => {
+const Header = () => {
   const classes = useStyles();
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -142,4 +142,4 @@ const header = () => {
     </AppBar>
   );
 };
-export default header;
+export default Header;

@@ -7,12 +7,15 @@ export default function handler(req, res) {
       "Lörem ipsum mikrosel nyranade. Trigt nism i säns. Krovevåment sos inte homost.Krovevåment sos inte homost.",
     partnerLogos: [
       {
+        id: 1,
         partnerLogo: assettag.src,
       },
       {
+        id: 2,
         partnerLogo: assettag.src,
       },
       {
+        id: 3,
         partnerLogo: assettag.src,
       },
     ],
