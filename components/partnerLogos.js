@@ -63,7 +63,7 @@ function PartnerLogos() {
           variant="h3"
           color="text.primary"
           fontWeight="650"
-          font-family="Lato"
+          fontFamily="Lato"
           fontSize="3.5vmin"
         >
           {data.partnerText}
