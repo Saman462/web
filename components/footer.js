@@ -77,6 +77,7 @@ function Footer() {
               src={Logo}
               className={classes.logoMedia}
               style={{ cursor: "pointer" }}
+              alt="logo"
             />
           </Container>
 
@@ -302,7 +303,13 @@ function Footer() {
           </Typography>
           <Container className={style.container1}>
             {data.footerLogos.map((eachData) => (
-              <Image src={eachData.footerLogo} key={eachData.id} width="250px" height="250px" />
+              <Image
+                src={eachData.footerLogo}
+                key={eachData.id}
+                width="250px"
+                height="250px"
+                alt="footer"
+              />
             ))}
           </Container>
         </Container>

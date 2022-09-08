@@ -26,7 +26,13 @@ function PartnerLogos() {
     <Stack direction="row" spacing={2}>
       <Container className={classes.sbanner}>
         {data.partnerLogos.map((eachData) => (
-          <Image height="250px" width="250px " src={eachData.partnerLogo} key={eachData.id} />
+          <Image
+            height="250px"
+            width="250px "
+            alt="partnerlogo"
+            src={eachData.partnerLogo}
+            key={eachData.id}
+          />
         ))}
       </Container>
 

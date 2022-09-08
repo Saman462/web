@@ -68,6 +68,7 @@ const Header = () => {
                 src={Logo}
                 className={classes.logoMedia}
                 style={{ cursor: "pointer" }}
+                alt="logo"
               />
             </Container>
           </Typography>

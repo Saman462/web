@@ -48,7 +48,12 @@ function Banners() {
           }}
         >
           <Container className={classes.bannerContainer}>
-            <Image src={eachData.productImage} layout="fill" objectFit="fill" />
+            <Image
+              src={eachData.productImage}
+              layout="fill"
+              objectFit="fill"
+              alt="banner"
+            />
           </Container>
 
           <Box

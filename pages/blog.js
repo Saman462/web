@@ -104,7 +104,12 @@ function blog(props) {
               width: "1000px",
             }}
           >
-            <Image src={assettag} objectFit="fill" layout="fill"></Image>
+            <Image
+              src={assettag}
+              objectFit="fill"
+              layout="fill"
+              alt="page"
+            ></Image>
           </Container>
           <Box
             style={{

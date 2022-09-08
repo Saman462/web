@@ -35,7 +35,7 @@ function Blogs() {
           }}
         >
           <CardContent>
-            <Image src={assettag} height={640} width={900}></Image>
+            <Image src={assettag} height={640} width={900} alt="blog"></Image>
 
             {/* {data.map((eachData) => */}
 
