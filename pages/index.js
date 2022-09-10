@@ -18,9 +18,9 @@ export default function Home() {
     <>
       {/* parallax effect */}
 
-      <div className={style.container}>
+      {/* <div className={style.container}>
         <Animation />
-      </div>
+      </div> */}
 
       {/* banner portion */}
 
@@ -30,7 +30,7 @@ export default function Home() {
 
       {/* logos sections */}
 
-      <div>
+      {/* <div>
         <Partners />
         <br />
         <br />
@@ -58,7 +58,7 @@ export default function Home() {
       <br />
       <br />
       <br />
-      <br />
+      <br /> */}
     </>
   );
 }
